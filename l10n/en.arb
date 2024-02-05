@@ -2,6 +2,7 @@
   "@@locale": "en",
   "noResultMessage": "No result",
   "search": "Search",
+  "typeToSearch": "Type here to search for a country",
   "cw_": "Curaçao",
   "eh_": "Western Sahara",
   "sh_": "Saint Helena",

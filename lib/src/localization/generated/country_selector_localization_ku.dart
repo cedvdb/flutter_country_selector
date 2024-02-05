@@ -11,6 +11,9 @@ class CountrySelectorLocalizationKu extends CountrySelectorLocalization {
   String get search => 'Search';
 
   @override
+  String get typeToSearch => 'Type here to search for a country';
+
+  @override
   String get cw_ => 'Curaçao';
 
   @override

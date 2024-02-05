@@ -44,28 +44,32 @@ class _SearchBoxState extends State<SearchBox> {
 
   @override
   Widget build(BuildContext context) {
-    return TextField(
-      autofocus: widget.autofocus,
-      onChanged: handleChange,
-      onSubmitted: (_) => widget.onSubmitted(),
-      cursorColor: widget.style?.color,
-      style: widget.style ?? Theme.of(context).textTheme.titleLarge,
-      autofillHints: const [AutofillHints.countryName],
-      decoration: widget.decoration ??
-          InputDecoration(
-            prefixIcon: const Icon(
-              Icons.search,
-              size: 24,
+    return Semantics(
+      label: CountrySelectorLocalization.of(context)?.typeToSearch ??
+          CountrySelectorLocalizationEn().typeToSearch,
+      child: TextField(
+        autofocus: widget.autofocus,
+        onChanged: handleChange,
+        onSubmitted: (_) => widget.onSubmitted(),
+        cursorColor: widget.style?.color,
+        style: widget.style ?? Theme.of(context).textTheme.titleLarge,
+        autofillHints: const [AutofillHints.countryName],
+        decoration: widget.decoration ??
+            InputDecoration(
+              prefixIcon: const Icon(
+                Icons.search,
+                size: 24,
+              ),
+              filled: true,
+              isDense: true,
+              border: OutlineInputBorder(
+                borderSide: BorderSide.none,
+                borderRadius: BorderRadius.circular(20),
+              ),
+              hintText: CountrySelectorLocalization.of(context)?.search ??
+                  CountrySelectorLocalizationEn().search,
             ),
-            filled: true,
-            isDense: true,
-            border: OutlineInputBorder(
-              borderSide: BorderSide.none,
-              borderRadius: BorderRadius.circular(20),
-            ),
-            hintText: CountrySelectorLocalization.of(context)?.search ??
-                CountrySelectorLocalizationEn().search,
-          ),
+      ),
     );
   }
 }

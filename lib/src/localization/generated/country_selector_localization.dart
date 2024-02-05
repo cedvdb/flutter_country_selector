@@ -145,6 +145,12 @@ abstract class CountrySelectorLocalization {
   /// **'Search'**
   String get search;
 
+  /// No description provided for @typeToSearch.
+  ///
+  /// In en, this message translates to:
+  /// **'Type here to search for a country'**
+  String get typeToSearch;
+
   /// No description provided for @cw_.
   ///
   /// In en, this message translates to:

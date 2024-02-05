@@ -6,20 +6,35 @@ void main() {
   runApp(const MyApp());
 }
 
+class ThemeConfig extends ValueNotifier<ThemeMode> {
+  ThemeConfig(super.value);
+}
+
+final theme = ThemeConfig(ThemeMode.light);
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context) => const MaterialApp(
-        locale: Locale('en'),
-        supportedLocales: [
-          Locale('en'),
-        ],
-        localizationsDelegates: [
-          GlobalMaterialLocalizations.delegate,
-          CountrySelectorLocalization.delegate,
-        ],
-        home: DemoPage(),
+  Widget build(BuildContext context) => AnimatedBuilder(
+        animation: theme,
+        builder: (context, _) {
+          return MaterialApp(
+            locale: const Locale('en'),
+            supportedLocales: const [
+              Locale('en'),
+            ],
+            localizationsDelegates: const [
+              GlobalMaterialLocalizations.delegate,
+              CountrySelectorLocalization.delegate,
+            ],
+            home: const DemoPage(),
+            themeMode: theme.value,
+            darkTheme: ThemeData(
+              brightness: Brightness.dark,
+            ),
+          );
+        },
       );
 }
 
@@ -126,6 +141,12 @@ class _DemoPageState extends State<DemoPage> {
               padding: const EdgeInsets.all(20.0),
               child: Column(
                 children: [
+                  SwitchListTile(
+                    value: theme.value == ThemeMode.dark,
+                    onChanged: (v) => setState(() =>
+                        theme.value = v ? ThemeMode.dark : ThemeMode.light),
+                    title: const Text('Dark mode'),
+                  ),
                   SwitchListTile(
                     value: showDialCode,
                     onChanged: (v) => setState(() => showDialCode = v),
