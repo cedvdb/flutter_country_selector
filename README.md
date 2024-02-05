@@ -12,7 +12,7 @@ Country selector of the phone_form_field package exported in its own package.
 
 Demo available here: https://cedvdb.github.io/flutter_country_selector/
 
-![](demo.gif)
+![](https://github.com/cedvdb/flutter_country_selector/blob/main/demo.gif?raw=true)
 
 
 ## Usage
