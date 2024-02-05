@@ -35,7 +35,7 @@ class CountrySelectorSheetState
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const SizedBox(height: 8),
+        const SizedBox(height: 6),
         Container(
           width: 50,
           height: 4,
@@ -48,7 +48,7 @@ class CountrySelectorSheetState
           height: 64,
           width: double.infinity,
           child: Padding(
-            padding: const EdgeInsets.fromLTRB(4, 12, 12, 12),
+            padding: const EdgeInsets.fromLTRB(16, 6, 16, 12),
             child: SearchBox(
               autofocus: widget.searchAutofocus,
               onChanged: onSearch,

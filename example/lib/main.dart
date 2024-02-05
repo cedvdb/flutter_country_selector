@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_country_selector/flutter_country_selector.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,13 +11,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => const MaterialApp(
-        locale: Locale('fr'),
+        locale: Locale('en'),
         supportedLocales: [
           Locale('en'),
-          Locale('fr'),
         ],
         localizationsDelegates: [
-          DefaultMaterialLocalizations.delegate,
+          GlobalMaterialLocalizations.delegate,
           CountrySelectorLocalization.delegate,
         ],
         home: DemoPage(),

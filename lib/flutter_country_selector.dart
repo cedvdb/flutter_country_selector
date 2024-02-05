@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_country_selector/src/country_selector_page.dart';
 import 'package:phone_numbers_parser/phone_numbers_parser.dart';
 
+import 'src/country_selector_sheet.dart';
+
 export 'package:phone_numbers_parser/phone_numbers_parser.dart' show IsoCode;
 export 'src/country_selector_base.dart';
 export 'src/country_selector_page.dart';
@@ -77,7 +79,7 @@ abstract class CountrySelector {
     Color? searchBoxIconColor,
     double? flagSize,
   }) {
-    return CountrySelectorPage(
+    return CountrySelectorSheet(
       onCountrySelected: onCountrySelected,
       countries: countries,
       favoriteCountries: favoriteCountries,
