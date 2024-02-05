@@ -1,3 +1,7 @@
+## 1.0.3
+
+* Update demo gif
+
 ## 1.0.2
 
 * Add `countryDialCode` method to `CountrySelectorLocalization`
