@@ -44,7 +44,7 @@ void runTests({required bool isPage}) {
         called = true;
       }));
       await tester.pumpAndSettle();
-      await tester.tap(find.byType(ListTile));
+      await tester.tap(find.byType(ListTile).first);
       await tester.pumpAndSettle();
 
       expect(called, isTrue);
