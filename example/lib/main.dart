@@ -134,47 +134,50 @@ class _DemoPageState extends State<DemoPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Container(
-          constraints: const BoxConstraints(maxWidth: 600),
-          child: Card(
-            child: Padding(
-              padding: const EdgeInsets.all(20.0),
-              child: Column(
-                children: [
-                  SwitchListTile(
-                    value: theme.value == ThemeMode.dark,
-                    onChanged: (v) => setState(() =>
-                        theme.value = v ? ThemeMode.dark : ThemeMode.light),
-                    title: const Text('Dark mode'),
-                  ),
-                  SwitchListTile(
-                    value: showDialCode,
-                    onChanged: (v) => setState(() => showDialCode = v),
-                    title: const Text('Show dial code'),
-                  ),
-                  SwitchListTile(
-                    value: containsFavorite,
-                    onChanged: (v) => setState(() => containsFavorite = v),
-                    title: const Text('Contains favorites'),
-                  ),
-                  ListTile(
-                    title: Wrap(
-                      alignment: WrapAlignment.spaceBetween,
-                      crossAxisAlignment: WrapCrossAlignment.center,
-                      children: [
-                        const Text('Country selector: '),
-                        NavigationTypeDropdown(
-                          onChange: (type) =>
-                              setState(() => navigationType = type),
-                          value: navigationType,
-                        ),
-                      ],
+        child: Padding(
+          padding: const EdgeInsets.only(top: 12),
+          child: Container(
+            constraints: const BoxConstraints(maxWidth: 600),
+            child: Card(
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  children: [
+                    SwitchListTile(
+                      value: theme.value == ThemeMode.dark,
+                      onChanged: (v) => setState(() =>
+                          theme.value = v ? ThemeMode.dark : ThemeMode.light),
+                      title: const Text('Dark mode'),
                     ),
-                  ),
-                  ElevatedButton(
-                      onPressed: () => show(context),
-                      child: const Text('Show')),
-                ],
+                    SwitchListTile(
+                      value: showDialCode,
+                      onChanged: (v) => setState(() => showDialCode = v),
+                      title: const Text('Show dial code'),
+                    ),
+                    SwitchListTile(
+                      value: containsFavorite,
+                      onChanged: (v) => setState(() => containsFavorite = v),
+                      title: const Text('Contains favorites'),
+                    ),
+                    ListTile(
+                      title: Wrap(
+                        alignment: WrapAlignment.spaceBetween,
+                        crossAxisAlignment: WrapCrossAlignment.center,
+                        children: [
+                          const Text('Country selector: '),
+                          NavigationTypeDropdown(
+                            onChange: (type) =>
+                                setState(() => navigationType = type),
+                            value: navigationType,
+                          ),
+                        ],
+                      ),
+                    ),
+                    ElevatedButton(
+                        onPressed: () => show(context),
+                        child: const Text('Show')),
+                  ],
+                ),
               ),
             ),
           ),
