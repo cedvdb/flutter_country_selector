@@ -1,7 +1,6 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_country_selector/src/country_selector_base.dart';
-import 'package:phone_numbers_parser/phone_numbers_parser.dart';
+
 import 'widgets/_country_list_view.dart';
 import 'widgets/_search_box.dart';
 
@@ -13,18 +12,17 @@ class CountrySelectorSheet extends CountrySelectorBase {
     required super.onCountrySelected,
     super.scrollController,
     super.scrollPhysics,
-    super.addFavoritesSeparator = true,
-    super.showDialCode = false,
+    super.showDialCode,
     super.noResultMessage,
-    super.favoriteCountries = const [],
-    super.countries = IsoCode.values,
-    super.searchAutofocus = kIsWeb,
+    super.favoriteCountries,
+    super.countries,
+    super.searchAutofocus,
     super.subtitleStyle,
     super.titleStyle,
     super.searchBoxDecoration,
     super.searchBoxTextStyle,
     super.searchBoxIconColor,
-    super.flagSize = 40,
+    super.flagSize,
   });
 
   @override

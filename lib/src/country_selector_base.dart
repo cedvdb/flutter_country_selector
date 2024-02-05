@@ -24,10 +24,6 @@ abstract class CountrySelectorBase extends StatefulWidget {
   /// The [ScrollPhysics] of the Country List
   final ScrollPhysics? scrollPhysics;
 
-  /// Whether to add a list divider between favorites & defaults
-  /// countries.
-  final bool addFavoritesSeparator;
-
   /// Whether to show the country country code (ie: +1 / +33 /...)
   /// as a listTile subtitle
   final bool showDialCode;
@@ -59,21 +55,24 @@ abstract class CountrySelectorBase extends StatefulWidget {
   const CountrySelectorBase({
     super.key,
     required this.onCountrySelected,
-    this.addFavoritesSeparator = true,
     this.scrollController,
     this.scrollPhysics,
-    this.showDialCode = false,
+    bool? showDialCode,
     this.noResultMessage,
-    this.favoriteCountries = const [],
-    this.countries = IsoCode.values,
-    this.searchAutofocus = kIsWeb,
+    List<IsoCode>? favoriteCountries,
+    List<IsoCode>? countries,
+    bool? searchAutofocus,
     this.subtitleStyle,
     this.titleStyle,
     this.searchBoxDecoration,
     this.searchBoxTextStyle,
     this.searchBoxIconColor,
-    this.flagSize = 40,
-  });
+    double? flagSize,
+  })  : countries = countries ?? IsoCode.values,
+        favoriteCountries = favoriteCountries ?? const [],
+        showDialCode = showDialCode ?? false,
+        flagSize = flagSize ?? 40,
+        searchAutofocus = searchAutofocus ?? kIsWeb;
 }
 
 abstract class CountrySelectorBaseState<W extends CountrySelectorBase>

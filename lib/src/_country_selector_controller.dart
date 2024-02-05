@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_country_selector/src/localization/localization.dart';
 import 'package:phone_numbers_parser/phone_numbers_parser.dart';
@@ -33,10 +32,10 @@ class CountrySelectorController with ChangeNotifier {
       countries: _countries,
     );
     // when there is a search, no need for favorites
-    if (searchedText.isNotEmpty) {
-      _filteredFavoriteCountries = [];
-    } else {
+    if (searchedText.isEmpty) {
       _filteredFavoriteCountries = _favoriteCountries;
+    } else {
+      _filteredFavoriteCountries = [];
     }
     notifyListeners();
   }

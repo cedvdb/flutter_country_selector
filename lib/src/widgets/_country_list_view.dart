@@ -26,12 +26,10 @@ class CountryListView extends StatelessWidget {
 
   final String? noResultMessage;
 
-  final List<SearchableCountry?> _allListElements;
-
   final TextStyle? subtitleStyle;
   final TextStyle? titleStyle;
 
-  CountryListView({
+  const CountryListView({
     super.key,
     required this.countries,
     required this.favorites,
@@ -43,23 +41,25 @@ class CountryListView extends StatelessWidget {
     this.flagSize = 40,
     this.subtitleStyle,
     this.titleStyle,
-  }) : _allListElements = [
-          ...favorites,
-          if (favorites.isNotEmpty) null, // delimiter
-          ...countries,
-        ];
+  });
 
   @override
   Widget build(BuildContext context) {
-    if (_allListElements.isEmpty) {
+    final allListElements = [
+      ...favorites,
+      if (favorites.isNotEmpty) null, // delimiter
+      ...countries,
+    ];
+
+    if (allListElements.isEmpty) {
       return NoResultView(title: noResultMessage);
     }
     return ListView.builder(
       physics: scrollPhysics,
       controller: scrollController,
-      itemCount: _allListElements.length,
+      itemCount: allListElements.length,
       itemBuilder: (BuildContext context, int index) {
-        final country = _allListElements[index];
+        final country = allListElements[index];
         if (country == null) {
           return const Divider(key: ValueKey('countryListSeparator'));
         }

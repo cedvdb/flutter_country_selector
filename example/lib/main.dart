@@ -10,6 +10,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => const MaterialApp(
+        locale: Locale('fr'),
+        supportedLocales: [
+          Locale('en'),
+          Locale('fr'),
+        ],
+        localizationsDelegates: [
+          DefaultMaterialLocalizations.delegate,
+          CountrySelectorLocalization.delegate,
+        ],
         home: DemoPage(),
       );
 }
@@ -92,7 +101,6 @@ class _DemoPageState extends State<DemoPage> {
   Widget buildSelectorPage() {
     return CountrySelector.page(
       onCountrySelected: (country) => Navigator.of(context).pop(country),
-      addFavoritesSeparator: true,
       favoriteCountries: containsFavorite ? [IsoCode.US] : [],
       showDialCode: showDialCode,
     );
