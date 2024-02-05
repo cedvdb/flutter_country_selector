@@ -9,7 +9,10 @@ Country selector of the phone_form_field package exported in its own package.
 
 ## Demo
 
+
 Demo available here: https://cedvdb.github.io/flutter_country_selector/
+
+![](demo.gif)
 
 
 ## Usage
