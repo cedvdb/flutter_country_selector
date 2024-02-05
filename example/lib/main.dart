@@ -26,6 +26,12 @@ class _DemoPageState extends State<DemoPage> {
   bool showDialCode = true;
   bool containsFavorite = false;
 
+  @override
+  initState() {
+    super.initState();
+    preloadFlags(IsoCode.values);
+  }
+
   show(BuildContext context) {
     switch (navigationType) {
       case NavigationType.page:
@@ -88,41 +94,52 @@ class _DemoPageState extends State<DemoPage> {
       onCountrySelected: (country) => Navigator.of(context).pop(country),
       addFavoritesSeparator: true,
       favoriteCountries: containsFavorite ? [IsoCode.US] : [],
-      showDialCode: showDialCode,
     );
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          SwitchListTile(
-            value: showDialCode,
-            onChanged: (v) => setState(() => showDialCode = v),
-            title: const Text('Show dial code'),
-          ),
-          SwitchListTile(
-            value: containsFavorite,
-            onChanged: (v) => setState(() => containsFavorite = v),
-            title: const Text('Contains favorites'),
-          ),
-          ListTile(
-            title: Wrap(
-              alignment: WrapAlignment.spaceBetween,
-              crossAxisAlignment: WrapCrossAlignment.center,
-              children: [
-                const Text('Country selector: '),
-                NavigationTypeDropdown(
-                  onChange: (type) => setState(() => navigationType = type),
-                  value: navigationType,
-                ),
-              ],
+      body: Center(
+        child: Container(
+          constraints: const BoxConstraints(maxWidth: 600),
+          child: Card(
+            child: Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Column(
+                children: [
+                  SwitchListTile(
+                    value: showDialCode,
+                    onChanged: (v) => setState(() => showDialCode = v),
+                    title: const Text('Show dial code'),
+                  ),
+                  SwitchListTile(
+                    value: containsFavorite,
+                    onChanged: (v) => setState(() => containsFavorite = v),
+                    title: const Text('Contains favorites'),
+                  ),
+                  ListTile(
+                    title: Wrap(
+                      alignment: WrapAlignment.spaceBetween,
+                      crossAxisAlignment: WrapCrossAlignment.center,
+                      children: [
+                        const Text('Country selector: '),
+                        NavigationTypeDropdown(
+                          onChange: (type) =>
+                              setState(() => navigationType = type),
+                          value: navigationType,
+                        ),
+                      ],
+                    ),
+                  ),
+                  ElevatedButton(
+                      onPressed: () => show(context),
+                      child: const Text('Show')),
+                ],
+              ),
             ),
           ),
-          ElevatedButton(
-              onPressed: () => show(context), child: const Text('Show')),
-        ],
+        ),
       ),
     );
   }

@@ -123,10 +123,10 @@ class CountrySelectorSheetState extends State<CountrySelectorSheet> {
           ),
         ),
         SizedBox(
-          height: 70,
+          height: 64,
           width: double.infinity,
           child: Padding(
-            padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
+            padding: const EdgeInsets.fromLTRB(4, 12, 12, 12),
             child: SearchBox(
               autofocus: widget.searchAutofocus,
               onChanged: _onSearch,
@@ -137,7 +137,6 @@ class CountrySelectorSheetState extends State<CountrySelectorSheet> {
             ),
           ),
         ),
-        const SizedBox(height: 16),
         const Divider(height: 0, thickness: 1.2),
         Flexible(
           child: AnimatedBuilder(

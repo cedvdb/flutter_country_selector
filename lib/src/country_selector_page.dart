@@ -114,6 +114,7 @@ class CountrySelectorPageState extends State<CountrySelectorPage> {
     return Scaffold(
       appBar: AppBar(
         elevation: 2,
+        leading: const Icon(Icons.search),
         shadowColor: Theme.of(context).colorScheme.shadow,
         title: SearchBox(
           autofocus: widget.searchAutofocus,
