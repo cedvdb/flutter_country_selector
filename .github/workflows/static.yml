@@ -36,7 +36,7 @@ jobs:
         run: flutter pub get
         working-directory: ./example
       - name: build
-        run: flutter build web
+        run: flutter build web --base-href "/flutter_country_selector/"
         working-directory: ./example
       - name: Setup Pages
         uses: actions/configure-pages@v4
