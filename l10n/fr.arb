@@ -1,6 +1,29 @@
 {
   "@@locale": "fr",
   "noResultMessage": "Aucun résultat",
+  "search": "Recherche",
+  "typeToSearch": "Ecrivez pour rechercher un pays",
+  "selectCountry": "Selectionner {country}",
+  "@selectCountry": {
+    "description": "Semantic of the search box",
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
+  "selectCountryWithDialCode": "Selectionner {country} {dialCode}",
+  "@selectCountryWithDialCode": {
+    "description": "Semantic of the search box when dial code is shown",
+    "placeholders": {
+      "country": {
+        "type": "String"
+      },
+      "dialCode": {
+        "type": "String"
+      }
+    }
+  },
   "ac_": "Île de l'Ascension",
   "ad_": "Andorre",
   "ae_": "Emirats Arabes Unis",
@@ -54,6 +77,7 @@
   "cr_": "Costa Rica",
   "cu_": "Cuba",
   "cv_": "Cap-Vert",
+  "cw_": "Curaçao",
   "cx_": "L'île de noël",
   "cy_": "Chypre",
   "cz_": "République Tchèque",
@@ -66,6 +90,7 @@
   "ec_": "Equateur",
   "ee_": "Estonie",
   "eg_": "Egypte",
+  "eh_": "Western Sahara",
   "er_": "Érythrée",
   "es_": "Espagne",
   "et_": "Ethiopie",
@@ -209,6 +234,7 @@
   "ss_": "Soudan du sud",
   "st_": "Sao Tomé et Principe",
   "sv_": "Salvador",
+  "sx_": "Sint Maarten",
   "sy_": "République arabe syrienne",
   "sz_": "Swaziland",
   "ta_": "Tristan da Cunha",
@@ -241,6 +267,7 @@
   "vu_": "Vanuatu",
   "wf_": "Wallis et Futuna",
   "ws_": "Samoa",
+  "xk_": "Kosovo",
   "ye_": "Yémen",
   "yt_": "Mayotte",
   "za_": "Afrique du Sud",

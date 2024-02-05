@@ -24,24 +24,6 @@ class CountrySelectorLocalizationFa extends CountrySelectorLocalization {
   }
 
   @override
-  String get cw_ => 'Curaçao';
-
-  @override
-  String get eh_ => 'Western Sahara';
-
-  @override
-  String get sh_ => 'Saint Helena';
-
-  @override
-  String get sj_ => 'Svalbard and Jan Mayen';
-
-  @override
-  String get sx_ => 'Sint Maarten';
-
-  @override
-  String get xk_ => 'Kosovo';
-
-  @override
   String get ac_ => 'جزیره اسنشن';
 
   @override
@@ -201,6 +183,9 @@ class CountrySelectorLocalizationFa extends CountrySelectorLocalization {
   String get cv_ => 'کیپ ورد';
 
   @override
+  String get cw_ => 'Curaçao';
+
+  @override
   String get cx_ => 'جزیره کریسمس';
 
   @override
@@ -235,6 +220,9 @@ class CountrySelectorLocalizationFa extends CountrySelectorLocalization {
 
   @override
   String get eg_ => 'مصر';
+
+  @override
+  String get eh_ => 'Western Sahara';
 
   @override
   String get er_ => 'اریتره';
@@ -630,7 +618,13 @@ class CountrySelectorLocalizationFa extends CountrySelectorLocalization {
   String get sg_ => 'سنگاپور';
 
   @override
+  String get sh_ => 'Saint Helena';
+
+  @override
   String get si_ => 'اسلوونی';
+
+  @override
+  String get sj_ => 'Svalbard and Jan Mayen';
 
   @override
   String get sk_ => 'اسلواکی';
@@ -658,6 +652,9 @@ class CountrySelectorLocalizationFa extends CountrySelectorLocalization {
 
   @override
   String get sv_ => 'السالوادور';
+
+  @override
+  String get sx_ => 'Sint Maarten';
 
   @override
   String get sy_ => 'جمهوری عربی سوریه';
@@ -754,6 +751,9 @@ class CountrySelectorLocalizationFa extends CountrySelectorLocalization {
 
   @override
   String get ws_ => 'ساموآ';
+
+  @override
+  String get xk_ => 'Kosovo';
 
   @override
   String get ye_ => 'یمن';

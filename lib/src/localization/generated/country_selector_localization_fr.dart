@@ -8,38 +8,20 @@ class CountrySelectorLocalizationFr extends CountrySelectorLocalization {
   String get noResultMessage => 'Aucun résultat';
 
   @override
-  String get search => 'Search';
+  String get search => 'Recherche';
 
   @override
-  String get typeToSearch => 'Type here to search for a country';
+  String get typeToSearch => 'Ecrivez pour rechercher un pays';
 
   @override
   String selectCountry(String country) {
-    return 'Select $country';
+    return 'Selectionner $country';
   }
 
   @override
   String selectCountryWithDialCode(String country, String dialCode) {
-    return 'Select $country $dialCode';
+    return 'Selectionner $country $dialCode';
   }
-
-  @override
-  String get cw_ => 'Curaçao';
-
-  @override
-  String get eh_ => 'Western Sahara';
-
-  @override
-  String get sh_ => 'Sainte-Hélène, Ascension et Tristan Da Cunha';
-
-  @override
-  String get sj_ => 'Svalbard et Jan Mayen';
-
-  @override
-  String get sx_ => 'Sint Maarten';
-
-  @override
-  String get xk_ => 'Kosovo';
 
   @override
   String get ac_ => 'Île de l\'Ascension';
@@ -201,6 +183,9 @@ class CountrySelectorLocalizationFr extends CountrySelectorLocalization {
   String get cv_ => 'Cap-Vert';
 
   @override
+  String get cw_ => 'Curaçao';
+
+  @override
   String get cx_ => 'L\'île de noël';
 
   @override
@@ -235,6 +220,9 @@ class CountrySelectorLocalizationFr extends CountrySelectorLocalization {
 
   @override
   String get eg_ => 'Egypte';
+
+  @override
+  String get eh_ => 'Western Sahara';
 
   @override
   String get er_ => 'Érythrée';
@@ -630,7 +618,13 @@ class CountrySelectorLocalizationFr extends CountrySelectorLocalization {
   String get sg_ => 'Singapour';
 
   @override
+  String get sh_ => 'Sainte-Hélène, Ascension et Tristan Da Cunha';
+
+  @override
   String get si_ => 'Slovénie';
+
+  @override
+  String get sj_ => 'Svalbard et Jan Mayen';
 
   @override
   String get sk_ => 'Slovaquie';
@@ -658,6 +652,9 @@ class CountrySelectorLocalizationFr extends CountrySelectorLocalization {
 
   @override
   String get sv_ => 'Salvador';
+
+  @override
+  String get sx_ => 'Sint Maarten';
 
   @override
   String get sy_ => 'République arabe syrienne';
@@ -754,6 +751,9 @@ class CountrySelectorLocalizationFr extends CountrySelectorLocalization {
 
   @override
   String get ws_ => 'Samoa';
+
+  @override
+  String get xk_ => 'Kosovo';
 
   @override
   String get ye_ => 'Yémen';

@@ -24,24 +24,6 @@ class CountrySelectorLocalizationZh extends CountrySelectorLocalization {
   }
 
   @override
-  String get cw_ => 'Curaçao';
-
-  @override
-  String get eh_ => 'Western Sahara';
-
-  @override
-  String get sh_ => '圣海伦娜，升天和特里斯坦·达库纳';
-
-  @override
-  String get sj_ => '斯瓦尔巴和扬·马延';
-
-  @override
-  String get sx_ => 'Sint Maarten';
-
-  @override
-  String get xk_ => 'Kosovo';
-
-  @override
   String get ac_ => '阿森松岛';
 
   @override
@@ -201,6 +183,9 @@ class CountrySelectorLocalizationZh extends CountrySelectorLocalization {
   String get cv_ => '佛得角';
 
   @override
+  String get cw_ => 'Curaçao';
+
+  @override
   String get cx_ => '圣诞岛';
 
   @override
@@ -235,6 +220,9 @@ class CountrySelectorLocalizationZh extends CountrySelectorLocalization {
 
   @override
   String get eg_ => '埃及';
+
+  @override
+  String get eh_ => 'Western Sahara';
 
   @override
   String get er_ => '厄立特里亚';
@@ -630,7 +618,13 @@ class CountrySelectorLocalizationZh extends CountrySelectorLocalization {
   String get sg_ => '新加坡';
 
   @override
+  String get sh_ => '圣海伦娜，升天和特里斯坦·达库纳';
+
+  @override
   String get si_ => '斯洛文尼亚';
+
+  @override
+  String get sj_ => '斯瓦尔巴和扬·马延';
 
   @override
   String get sk_ => '斯洛伐克';
@@ -658,6 +652,9 @@ class CountrySelectorLocalizationZh extends CountrySelectorLocalization {
 
   @override
   String get sv_ => '萨尔瓦多';
+
+  @override
+  String get sx_ => 'Sint Maarten';
 
   @override
   String get sy_ => '阿拉伯叙利亚共和国';
@@ -754,6 +751,9 @@ class CountrySelectorLocalizationZh extends CountrySelectorLocalization {
 
   @override
   String get ws_ => '萨摩亚';
+
+  @override
+  String get xk_ => 'Kosovo';
 
   @override
   String get ye_ => '也门';

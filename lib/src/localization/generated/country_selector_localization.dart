@@ -163,42 +163,6 @@ abstract class CountrySelectorLocalization {
   /// **'Select {country} {dialCode}'**
   String selectCountryWithDialCode(String country, String dialCode);
 
-  /// No description provided for @cw_.
-  ///
-  /// In en, this message translates to:
-  /// **'Curaçao'**
-  String get cw_;
-
-  /// No description provided for @eh_.
-  ///
-  /// In en, this message translates to:
-  /// **'Western Sahara'**
-  String get eh_;
-
-  /// No description provided for @sh_.
-  ///
-  /// In en, this message translates to:
-  /// **'Saint Helena'**
-  String get sh_;
-
-  /// No description provided for @sj_.
-  ///
-  /// In en, this message translates to:
-  /// **'Svalbard and Jan Mayen'**
-  String get sj_;
-
-  /// No description provided for @sx_.
-  ///
-  /// In en, this message translates to:
-  /// **'Sint Maarten'**
-  String get sx_;
-
-  /// No description provided for @xk_.
-  ///
-  /// In en, this message translates to:
-  /// **'Kosovo'**
-  String get xk_;
-
   /// No description provided for @ac_.
   ///
   /// In en, this message translates to:
@@ -517,6 +481,12 @@ abstract class CountrySelectorLocalization {
   /// **'Cape Verde'**
   String get cv_;
 
+  /// No description provided for @cw_.
+  ///
+  /// In en, this message translates to:
+  /// **'Curaçao'**
+  String get cw_;
+
   /// No description provided for @cx_.
   ///
   /// In en, this message translates to:
@@ -588,6 +558,12 @@ abstract class CountrySelectorLocalization {
   /// In en, this message translates to:
   /// **'Egypt'**
   String get eg_;
+
+  /// No description provided for @eh_.
+  ///
+  /// In en, this message translates to:
+  /// **'Western Sahara'**
+  String get eh_;
 
   /// No description provided for @er_.
   ///
@@ -1375,11 +1351,23 @@ abstract class CountrySelectorLocalization {
   /// **'Singapore'**
   String get sg_;
 
+  /// No description provided for @sh_.
+  ///
+  /// In en, this message translates to:
+  /// **'Saint Helena'**
+  String get sh_;
+
   /// No description provided for @si_.
   ///
   /// In en, this message translates to:
   /// **'Slovenia'**
   String get si_;
+
+  /// No description provided for @sj_.
+  ///
+  /// In en, this message translates to:
+  /// **'Svalbard and Jan Mayen'**
+  String get sj_;
 
   /// No description provided for @sk_.
   ///
@@ -1434,6 +1422,12 @@ abstract class CountrySelectorLocalization {
   /// In en, this message translates to:
   /// **'El Salvador'**
   String get sv_;
+
+  /// No description provided for @sx_.
+  ///
+  /// In en, this message translates to:
+  /// **'Sint Maarten'**
+  String get sx_;
 
   /// No description provided for @sy_.
   ///
@@ -1626,6 +1620,12 @@ abstract class CountrySelectorLocalization {
   /// In en, this message translates to:
   /// **'Samoa'**
   String get ws_;
+
+  /// No description provided for @xk_.
+  ///
+  /// In en, this message translates to:
+  /// **'Kosovo'**
+  String get xk_;
 
   /// No description provided for @ye_.
   ///
