@@ -8,6 +8,78 @@ import 'localization/localization.dart';
 import '_localized_country.dart';
 import '_search_box.dart';
 
+abstract class CountrySelector extends StatefulWidget {
+  /// List of countries to display in the selector
+  /// Value optional in constructor.
+  /// when omitted, the full country list is displayed
+  final List<IsoCode> countries;
+
+  /// Determine the countries to be displayed on top of the list
+  /// Check [addFavoritesSeparator] property to enable/disable adding a
+  /// list divider between favorites and others defaults countries
+  final List<IsoCode> favoriteCountries;
+
+  /// Callback triggered when user select a country
+  final ValueChanged<LocalizedCountry> onCountrySelected;
+
+  /// ListView.builder scroll controller (ie: [ScrollView.controller])
+  final ScrollController? scrollController;
+
+  /// The [ScrollPhysics] of the Country List
+  final ScrollPhysics? scrollPhysics;
+
+  /// Whether to add a list divider between favorites & defaults
+  /// countries.
+  final bool addFavoritesSeparator;
+
+  /// Whether to show the country country code (ie: +1 / +33 /...)
+  /// as a listTile subtitle
+  final bool showDialCode;
+
+  /// The message displayed instead of the list when the search has no results
+  final String? noResultMessage;
+
+  /// whether the search input is auto focussed
+  final bool searchAutofocus;
+
+  /// The [TextStyle] of the country subtitle
+  final TextStyle? subtitleStyle;
+
+  /// The [TextStyle] of the country title
+  final TextStyle? titleStyle;
+
+  /// The [InputDecoration] of the Search Box
+  final InputDecoration? searchBoxDecoration;
+
+  /// The [TextStyle] of the Search Box
+  final TextStyle? searchBoxTextStyle;
+
+  /// The [Color] of the Search Icon in the Search Box
+  final Color? searchBoxIconColor;
+
+  /// The size of the flag inside the selector
+  final double flagSize;
+
+  const CountrySelector({
+    super.key,
+    required this.onCountrySelected,
+    this.scrollController,
+    this.scrollPhysics,
+    this.addFavoritesSeparator = true,
+    this.showDialCode = false,
+    this.noResultMessage,
+    this.favoriteCountries = const [],
+    this.countries = IsoCode.values,
+    this.searchAutofocus = kIsWeb,
+    this.subtitleStyle,
+    this.titleStyle,
+    this.searchBoxDecoration,
+    this.searchBoxTextStyle,
+    this.searchBoxIconColor,
+    this.flagSize = 40,
+  });
+}
+
 /// Same as [CountrySelector] but designed as a full page
 class CountrySelectorPage extends StatefulWidget {
   /// List of countries to display in the selector
