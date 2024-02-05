@@ -1,0 +1,29 @@
+name: flutter_country_selector
+description: "A new Flutter package project."
+version: 0.0.1
+
+environment:
+  sdk: ">=3.2.4 <4.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  intl: ">=0.18.1 <=1.0.0"
+  diacritic: ^0.1.5
+  circle_flags: ^4.0.0
+  # for iso codes, phone_numbers_parser needs to stay currently
+  # as the flutter_country_selector library needs to be
+  # compatible with phone_form_field
+  phone_numbers_parser: ^8.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  generate: true
