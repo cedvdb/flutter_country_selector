@@ -1,3 +1,4 @@
+import 'package:diacritic/diacritic.dart';
 import 'package:phone_numbers_parser/metadata.dart';
 import 'package:phone_numbers_parser/phone_numbers_parser.dart';
 
@@ -9,6 +10,8 @@ class LocalizedCountry {
   /// localized name of the country
   final String name;
 
+  final String searchableName;
+
   /// country dialing code to call them internationally
   final String dialCode;
 
@@ -16,7 +19,8 @@ class LocalizedCountry {
   String get formattedCountryDialingCode => '+ $dialCode';
 
   LocalizedCountry(this.isoCode, this.name)
-      : dialCode = metadataByIsoCode[isoCode]?.countryCode ?? '';
+      : dialCode = metadataByIsoCode[isoCode]?.countryCode ?? '',
+        searchableName = removeDiacritics(name.toLowerCase());
 
   @override
   String toString() {

@@ -1,7 +1,6 @@
 // responsible of searching through the country list
 
 import 'package:diacritic/diacritic.dart';
-import 'package:phone_numbers_parser/phone_numbers_parser.dart';
 
 import '_localized_country.dart';
 
@@ -27,7 +26,7 @@ class CountryFinder {
       return _filterByCountryCallingCode(
           countryCallingCode: text, countries: countries);
     } else {
-      return _filterByName(searchTxt: text, countries: countries);
+      return _filterByName(searchText: text, countries: countries);
     }
   }
 
@@ -36,41 +35,28 @@ class CountryFinder {
     required List<LocalizedCountry> countries,
   }) {
     int computeSortScore(LocalizedCountry country) =>
-        country.dialCode == countryCallingCode ? 1 : 0;
+        country.dialCode.startsWith(countryCallingCode) ? 0 : 1;
 
     return countries
         .where((country) => country.dialCode.contains(countryCallingCode))
         .toList()
       // puts the closest match at the top
-      ..sort((a, b) => computeSortScore(b) - computeSortScore(a));
+      ..sort((a, b) => computeSortScore(a) - computeSortScore(b));
   }
 
   List<LocalizedCountry> _filterByName({
-    required String searchTxt,
+    required String searchText,
     required List<LocalizedCountry> countries,
   }) {
-    searchTxt = removeDiacritics(searchTxt.toLowerCase());
-    // since we keep countries that contain the searched text,
-    // we need to put the countries that start with that text in front.
-    int getSortPoint(String name, IsoCode isoCode) {
-      bool isStartOfString = name.startsWith(searchTxt) ||
-          isoCode.name.toLowerCase().startsWith(searchTxt);
-      return isStartOfString ? 1 : 0;
-    }
+    searchText = removeDiacritics(searchText.toLowerCase());
 
-    int compareCountries(LocalizedCountry a, LocalizedCountry b) {
-      final sortPoint =
-          getSortPoint(b.name, b.isoCode) - getSortPoint(a.name, a.isoCode);
-      // sort alphabetically when comparison with search term get same result
-      return sortPoint == 0 ? a.name.compareTo(b.name) : sortPoint;
-    }
-
-    return countries.where((country) {
-      final countryName = removeDiacritics(country.name.toLowerCase());
-      return countryName.contains(searchTxt) ||
-          country.isoCode.name.toLowerCase().contains(searchTxt);
-    }).toList()
-      // puts the ones that begin by txt first
-      ..sort(compareCountries);
+    int computeSortScore(LocalizedCountry country) =>
+        country.searchableName.startsWith(searchText) ? 0 : 1;
+    return countries
+        .where((country) =>
+            country.searchableName.contains(searchText.toLowerCase()))
+        .toList()
+      // puts the closest match at the top
+      ..sort((a, b) => computeSortScore(a) - computeSortScore(b));
   }
 }

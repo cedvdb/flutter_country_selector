@@ -94,6 +94,7 @@ class _DemoPageState extends State<DemoPage> {
       onCountrySelected: (country) => Navigator.of(context).pop(country),
       addFavoritesSeparator: true,
       favoriteCountries: containsFavorite ? [IsoCode.US] : [],
+      showDialCode: showDialCode,
     );
   }
 
