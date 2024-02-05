@@ -53,8 +53,13 @@ class CountrySelectorController with ChangeNotifier {
     final localization = CountrySelectorLocalization.of(context) ??
         CountrySelectorLocalizationEn();
     return isoCodes
-        .map((isoCode) =>
-            SearchableCountry(isoCode, localization.countryName(isoCode)))
+        .map(
+          (isoCode) => SearchableCountry(
+            isoCode,
+            localization.countryDialCode(isoCode),
+            localization.countryName(isoCode),
+          ),
+        )
         .toList()
       ..sort((a, b) => a.name.compareTo(b.name));
   }

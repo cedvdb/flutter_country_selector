@@ -1,5 +1,4 @@
 import 'package:diacritic/diacritic.dart';
-import 'package:phone_numbers_parser/metadata.dart';
 import 'package:phone_numbers_parser/phone_numbers_parser.dart';
 
 /// [SearchableCountry] regroups informations for searching
@@ -24,9 +23,8 @@ class SearchableCountry {
   /// returns "+ [dialCode]"
   String get formattedCountryDialingCode => '+ $dialCode';
 
-  SearchableCountry(this.isoCode, this.name)
-      : dialCode = metadataByIsoCode[isoCode]?.countryCode ?? '',
-        searchableName = removeDiacritics(name.toLowerCase());
+  SearchableCountry(this.isoCode, this.dialCode, this.name)
+      : searchableName = removeDiacritics(name.toLowerCase());
 
   @override
   String toString() {

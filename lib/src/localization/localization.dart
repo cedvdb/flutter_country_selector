@@ -1,3 +1,4 @@
+import 'package:phone_numbers_parser/metadata.dart';
 import 'package:phone_numbers_parser/phone_numbers_parser.dart';
 
 import 'generated/country_selector_localization.dart';
@@ -6,7 +7,11 @@ export 'generated/country_selector_localization.dart';
 export 'generated/country_selector_localization_en.dart';
 
 extension DynamicLocalization on CountrySelectorLocalization {
-  countryName(IsoCode isoCode) {
+  String countryDialCode(IsoCode isoCode) {
+    return metadataByIsoCode[isoCode]?.countryCode ?? '';
+  }
+
+  String countryName(IsoCode isoCode) {
     return switch (isoCode) {
       IsoCode.AC => ac_,
       IsoCode.AD => ad_,
