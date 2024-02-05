@@ -14,6 +14,16 @@ class CountrySelectorLocalizationRu extends CountrySelectorLocalization {
   String get typeToSearch => 'Type here to search for a country';
 
   @override
+  String selectCountry(String country) {
+    return 'Select $country';
+  }
+
+  @override
+  String selectCountryWithDialCode(String country, String dialCode) {
+    return 'Select $country $dialCode';
+  }
+
+  @override
   String get cw_ => 'Curaçao';
 
   @override

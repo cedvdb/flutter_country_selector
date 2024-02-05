@@ -3,6 +3,27 @@
   "noResultMessage": "No result",
   "search": "Search",
   "typeToSearch": "Type here to search for a country",
+  "selectCountry": "Select {country}",
+  "@selectCountry": {
+    "description": "Semantic of the search box",
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
+  "selectCountryWithDialCode": "Select {country} {dialCode}",
+  "@selectCountryWithDialCode": {
+    "description": "Semantic of the search box when dial code is shown",
+    "placeholders": {
+      "country": {
+        "type": "String"
+      },
+      "dialCode": {
+        "type": "String"
+      }
+    }
+  },
   "cw_": "Curaçao",
   "eh_": "Western Sahara",
   "sh_": "Saint Helena",
