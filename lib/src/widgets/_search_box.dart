@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'localization/localization.dart';
+import '../localization/localization.dart';
 
 class SearchBox extends StatefulWidget {
   final Function(String) onChanged;

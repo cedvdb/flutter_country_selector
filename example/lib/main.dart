@@ -29,7 +29,7 @@ class _DemoPageState extends State<DemoPage> {
   @override
   initState() {
     super.initState();
-    preloadFlags(IsoCode.values);
+    CountrySelector.preloadFlags();
   }
 
   show(BuildContext context) {
@@ -44,7 +44,7 @@ class _DemoPageState extends State<DemoPage> {
         return showDialog(
           context: context,
           builder: (_) => Dialog(
-            child: buildSelectorPage(),
+            child: buildSelectorSheet(),
           ),
         );
       case NavigationType.draggableBottomSheet:
@@ -62,7 +62,7 @@ class _DemoPageState extends State<DemoPage> {
             maxChildSize: 0.85,
             expand: false,
             builder: (context, scrollController) {
-              return buildSelectorPage();
+              return buildSelectorSheet();
             },
           ),
           isScrollControlled: true,
@@ -72,7 +72,7 @@ class _DemoPageState extends State<DemoPage> {
           context: context,
           builder: (_) => SizedBox(
             height: MediaQuery.of(context).size.height - 90,
-            child: buildSelectorPage(),
+            child: buildSelectorSheet(),
           ),
           isScrollControlled: true,
         );
@@ -82,7 +82,7 @@ class _DemoPageState extends State<DemoPage> {
           builder: (_) => MediaQuery(
             data: MediaQueryData.fromView(View.of(context)),
             child: SafeArea(
-              child: buildSelectorPage(),
+              child: buildSelectorSheet(),
             ),
           ),
         );
@@ -90,7 +90,16 @@ class _DemoPageState extends State<DemoPage> {
   }
 
   Widget buildSelectorPage() {
-    return CountrySelectorPage(
+    return CountrySelector.page(
+      onCountrySelected: (country) => Navigator.of(context).pop(country),
+      addFavoritesSeparator: true,
+      favoriteCountries: containsFavorite ? [IsoCode.US] : [],
+      showDialCode: showDialCode,
+    );
+  }
+
+  Widget buildSelectorSheet() {
+    return CountrySelector.sheet(
       onCountrySelected: (country) => Navigator.of(context).pop(country),
       addFavoritesSeparator: true,
       favoriteCountries: containsFavorite ? [IsoCode.US] : [],

@@ -1,20 +1,19 @@
 import 'package:circle_flags/circle_flags.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-import '_localized_country.dart';
+import '../search/searchable_country.dart';
 import '_no_result_view.dart';
 
 class CountryListView extends StatelessWidget {
   /// Callback function triggered when user select a country
-  final Function(LocalizedCountry) onTap;
+  final Function(SearchableCountry) onTap;
 
   /// List of countries to display
-  final List<LocalizedCountry> countries;
+  final List<SearchableCountry> countries;
   final double flagSize;
 
   /// list of favorite countries to display at the top
-  final List<LocalizedCountry> favorites;
+  final List<SearchableCountry> favorites;
 
   /// proxy to the ListView.builder controller (ie: [ScrollView.controller])
   final ScrollController? scrollController;
@@ -27,7 +26,7 @@ class CountryListView extends StatelessWidget {
 
   final String? noResultMessage;
 
-  late final List<LocalizedCountry?> _allListElement;
+  final List<SearchableCountry?> _allListElements;
 
   final TextStyle? subtitleStyle;
   final TextStyle? titleStyle;
@@ -44,29 +43,23 @@ class CountryListView extends StatelessWidget {
     this.flagSize = 40,
     this.subtitleStyle,
     this.titleStyle,
-  }) {
-    if (listEquals(countries, favorites)) {
-      _allListElement = countries;
-    } else {
-      _allListElement = [
-        ...favorites,
-        if (favorites.isNotEmpty) null, // delimiter
-        ...countries,
-      ];
-    }
-  }
+  }) : _allListElements = [
+          ...favorites,
+          if (favorites.isNotEmpty) null, // delimiter
+          ...countries,
+        ];
 
   @override
   Widget build(BuildContext context) {
-    if (_allListElement.isEmpty) {
+    if (_allListElements.isEmpty) {
       return NoResultView(title: noResultMessage);
     }
     return ListView.builder(
       physics: scrollPhysics,
       controller: scrollController,
-      itemCount: _allListElement.length,
+      itemCount: _allListElements.length,
       itemBuilder: (BuildContext context, int index) {
-        final country = _allListElement[index];
+        final country = _allListElements[index];
         if (country == null) {
           return const Divider(key: ValueKey('countryListSeparator'));
         }

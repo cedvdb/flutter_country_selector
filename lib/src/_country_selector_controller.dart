@@ -1,19 +1,20 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_country_selector/src/localization/localization.dart';
 import 'package:phone_numbers_parser/phone_numbers_parser.dart';
 
-import '_country_finder.dart';
-import '_localized_country.dart';
+import 'search/country_finder.dart';
+import 'search/searchable_country.dart';
 
 class CountrySelectorController with ChangeNotifier {
   final _finder = CountryFinder();
-  List<LocalizedCountry> _countries = [];
-  List<LocalizedCountry> _filteredCountries = [];
-  List<LocalizedCountry> _favoriteCountries = [];
-  List<LocalizedCountry> _filteredFavoriteCountries = [];
+  List<SearchableCountry> _countries = [];
+  List<SearchableCountry> _filteredCountries = [];
+  List<SearchableCountry> _favoriteCountries = [];
+  List<SearchableCountry> _filteredFavoriteCountries = [];
 
-  List<LocalizedCountry> get filteredCountries => _filteredCountries;
-  List<LocalizedCountry> get filteredFavorites => _filteredFavoriteCountries;
+  List<SearchableCountry> get filteredCountries => _filteredCountries;
+  List<SearchableCountry> get filteredFavorites => _filteredFavoriteCountries;
 
   CountrySelectorController(
     BuildContext context,
@@ -31,23 +32,21 @@ class CountrySelectorController with ChangeNotifier {
       text: searchedText,
       countries: _countries,
     );
-    _filteredFavoriteCountries = _finder.whereText(
-      text: searchedText,
-      countries: _favoriteCountries,
-    );
+    // when there is a search, no need for favorites
+    if (searchedText.isNotEmpty) {
+      _filteredFavoriteCountries = [];
+    } else {
+      _filteredFavoriteCountries = _favoriteCountries;
+    }
     notifyListeners();
   }
 
-  LocalizedCountry? findFirst() {
-    if (_filteredFavoriteCountries.isNotEmpty) {
-      return _filteredFavoriteCountries.first;
-    } else if (_filteredCountries.isNotEmpty) {
-      return _filteredCountries.first;
-    }
-    return null;
+  SearchableCountry? findFirst() {
+    return _filteredFavoriteCountries.firstOrNull ??
+        _filteredCountries.firstOrNull;
   }
 
-  List<LocalizedCountry> _buildLocalizedCountryList(
+  List<SearchableCountry> _buildLocalizedCountryList(
     BuildContext context,
     List<IsoCode> isoCodes,
   ) {
@@ -56,7 +55,7 @@ class CountrySelectorController with ChangeNotifier {
         CountrySelectorLocalizationEn();
     return isoCodes
         .map((isoCode) =>
-            LocalizedCountry(isoCode, localization.countryName(isoCode)))
+            SearchableCountry(isoCode, localization.countryName(isoCode)))
         .toList()
       ..sort((a, b) => a.name.compareTo(b.name));
   }

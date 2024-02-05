@@ -2,14 +2,20 @@ import 'package:diacritic/diacritic.dart';
 import 'package:phone_numbers_parser/metadata.dart';
 import 'package:phone_numbers_parser/phone_numbers_parser.dart';
 
-/// Country regroup informations for displaying a list of countries
-class LocalizedCountry {
+/// [SearchableCountry] regroups informations for searching
+/// a country by some of its properties. It is not meant
+/// to be exported outside this pacakge, as we would like people
+/// to use CountrySelectorLocalization.of(context).countryName()
+/// to find the country name instead, which would prevent country.name
+/// to be out of sync if the search happened before a language change.
+class SearchableCountry {
   /// Country alpha-2 iso code
   final IsoCode isoCode;
 
   /// localized name of the country
   final String name;
 
+  /// lower case name with diacritics removed
   final String searchableName;
 
   /// country dialing code to call them internationally
@@ -18,7 +24,7 @@ class LocalizedCountry {
   /// returns "+ [dialCode]"
   String get formattedCountryDialingCode => '+ $dialCode';
 
-  LocalizedCountry(this.isoCode, this.name)
+  SearchableCountry(this.isoCode, this.name)
       : dialCode = metadataByIsoCode[isoCode]?.countryCode ?? '',
         searchableName = removeDiacritics(name.toLowerCase());
 

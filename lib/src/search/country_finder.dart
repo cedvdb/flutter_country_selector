@@ -2,12 +2,12 @@
 
 import 'package:diacritic/diacritic.dart';
 
-import '_localized_country.dart';
+import 'searchable_country.dart';
 
 class CountryFinder {
-  List<LocalizedCountry> whereText({
+  List<SearchableCountry> whereText({
     required String text,
-    required List<LocalizedCountry> countries,
+    required List<SearchableCountry> countries,
   }) {
     // remove + if search text starts with +
     if (text.startsWith('+')) {
@@ -30,11 +30,11 @@ class CountryFinder {
     }
   }
 
-  List<LocalizedCountry> _filterByCountryCallingCode({
+  List<SearchableCountry> _filterByCountryCallingCode({
     required String countryCallingCode,
-    required List<LocalizedCountry> countries,
+    required List<SearchableCountry> countries,
   }) {
-    int computeSortScore(LocalizedCountry country) =>
+    int computeSortScore(SearchableCountry country) =>
         country.dialCode.startsWith(countryCallingCode) ? 0 : 1;
 
     return countries
@@ -44,13 +44,13 @@ class CountryFinder {
       ..sort((a, b) => computeSortScore(a) - computeSortScore(b));
   }
 
-  List<LocalizedCountry> _filterByName({
+  List<SearchableCountry> _filterByName({
     required String searchText,
-    required List<LocalizedCountry> countries,
+    required List<SearchableCountry> countries,
   }) {
     searchText = removeDiacritics(searchText.toLowerCase());
 
-    int computeSortScore(LocalizedCountry country) =>
+    int computeSortScore(SearchableCountry country) =>
         country.searchableName.startsWith(searchText) ? 0 : 1;
     return countries
         .where((country) =>
