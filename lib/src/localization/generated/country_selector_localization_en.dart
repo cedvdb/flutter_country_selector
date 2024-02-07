@@ -19,11 +19,6 @@ class CountrySelectorLocalizationEn extends CountrySelectorLocalization {
   }
 
   @override
-  String selectCountryWithDialCode(String country, String dialCode) {
-    return 'Select $country $dialCode';
-  }
-
-  @override
   String get ac_ => 'Ascension Island';
 
   @override
@@ -156,7 +151,7 @@ class CountrySelectorLocalizationEn extends CountrySelectorLocalization {
   String get ch_ => 'Switzerland';
 
   @override
-  String get ci_ => 'Cote d\'Ivoire';
+  String get ci_ => 'Ivory Coast';
 
   @override
   String get ck_ => 'Cook Islands';

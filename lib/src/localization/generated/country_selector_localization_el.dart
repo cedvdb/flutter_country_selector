@@ -19,11 +19,6 @@ class CountrySelectorLocalizationEl extends CountrySelectorLocalization {
   }
 
   @override
-  String selectCountryWithDialCode(String country, String dialCode) {
-    return 'Select $country $dialCode';
-  }
-
-  @override
   String get ac_ => 'Νησί της Ανάληψης';
 
   @override

@@ -157,12 +157,6 @@ abstract class CountrySelectorLocalization {
   /// **'Select {country}'**
   String selectCountry(String country);
 
-  /// Semantic of the search box when dial code is shown
-  ///
-  /// In en, this message translates to:
-  /// **'Select {country} {dialCode}'**
-  String selectCountryWithDialCode(String country, String dialCode);
-
   /// No description provided for @ac_.
   ///
   /// In en, this message translates to:
@@ -430,7 +424,7 @@ abstract class CountrySelectorLocalization {
   /// No description provided for @ci_.
   ///
   /// In en, this message translates to:
-  /// **'Cote d\'Ivoire'**
+  /// **'Ivory Coast'**
   String get ci_;
 
   /// No description provided for @ck_.

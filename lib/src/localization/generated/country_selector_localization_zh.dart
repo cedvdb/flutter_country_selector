@@ -19,11 +19,6 @@ class CountrySelectorLocalizationZh extends CountrySelectorLocalization {
   }
 
   @override
-  String selectCountryWithDialCode(String country, String dialCode) {
-    return 'Select $country $dialCode';
-  }
-
-  @override
   String get ac_ => '阿森松岛';
 
   @override

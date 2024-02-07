@@ -12,18 +12,6 @@
       }
     }
   },
-  "selectCountryWithDialCode": "Selectionner {country} {dialCode}",
-  "@selectCountryWithDialCode": {
-    "description": "Semantic of the search box when dial code is shown",
-    "placeholders": {
-      "country": {
-        "type": "String"
-      },
-      "dialCode": {
-        "type": "String"
-      }
-    }
-  },
   "ac_": "Île de l'Ascension",
   "ad_": "Andorre",
   "ae_": "Emirats Arabes Unis",

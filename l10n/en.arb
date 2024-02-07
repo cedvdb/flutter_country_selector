@@ -12,18 +12,6 @@
       }
     }
   },
-  "selectCountryWithDialCode": "Select {country} {dialCode}",
-  "@selectCountryWithDialCode": {
-    "description": "Semantic of the search box when dial code is shown",
-    "placeholders": {
-      "country": {
-        "type": "String"
-      },
-      "dialCode": {
-        "type": "String"
-      }
-    }
-  },
   "ac_": "Ascension Island",
   "ad_": "Andorra",
   "ae_": "United Arab Emirates",
@@ -68,7 +56,7 @@
   "cf_": "Central African Republic",
   "cg_": "Congo",
   "ch_": "Switzerland",
-  "ci_": "Cote d'Ivoire",
+  "ci_": "Ivory Coast",
   "ck_": "Cook Islands",
   "cl_": "Chile",
   "cm_": "Cameroon",

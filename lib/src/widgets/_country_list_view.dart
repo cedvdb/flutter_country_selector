@@ -1,6 +1,5 @@
 import 'package:circle_flags/circle_flags.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_country_selector/flutter_country_selector.dart';
 
 import '../search/searchable_country.dart';
 import '_no_result_view.dart';
@@ -56,9 +55,6 @@ class CountryListView extends StatelessWidget {
       return NoResultView(title: noResultMessage);
     }
 
-    final localization = CountrySelectorLocalization.of(context) ??
-        CountrySelectorLocalizationEn();
-
     return ListView.builder(
       physics: scrollPhysics,
       controller: scrollController,
@@ -69,39 +65,33 @@ class CountryListView extends StatelessWidget {
           return const Divider(key: ValueKey('countryListSeparator'));
         }
 
-        return Semantics(
-          label: showDialCode
-              ? localization.selectCountryWithDialCode(
-                  country.name, country.dialCode)
-              : localization.selectCountry(country.name),
-          child: ListTile(
-            key: ValueKey(country.isoCode.name),
-            leading: CircleFlag(
-              country.isoCode.name,
-              key: ValueKey('circle-flag-${country.isoCode.name}'),
-              size: flagSize,
-            ),
-            title: Align(
-              alignment: AlignmentDirectional.centerStart,
-              child: Text(
-                country.name,
-                textAlign: TextAlign.start,
-                style: titleStyle,
-              ),
-            ),
-            subtitle: showDialCode
-                ? Align(
-                    alignment: AlignmentDirectional.centerStart,
-                    child: Text(
-                      country.formattedCountryDialingCode,
-                      textDirection: TextDirection.ltr,
-                      textAlign: TextAlign.start,
-                      style: subtitleStyle,
-                    ),
-                  )
-                : null,
-            onTap: () => onTap(country),
+        return ListTile(
+          key: ValueKey(country.isoCode.name),
+          leading: CircleFlag(
+            country.isoCode.name,
+            key: ValueKey('circle-flag-${country.isoCode.name}'),
+            size: flagSize,
           ),
+          title: Align(
+            alignment: AlignmentDirectional.centerStart,
+            child: Text(
+              country.name,
+              textAlign: TextAlign.start,
+              style: titleStyle,
+            ),
+          ),
+          subtitle: showDialCode
+              ? Align(
+                  alignment: AlignmentDirectional.centerStart,
+                  child: Text(
+                    country.formattedCountryDialingCode,
+                    textDirection: TextDirection.ltr,
+                    textAlign: TextAlign.start,
+                    style: subtitleStyle,
+                  ),
+                )
+              : null,
+          onTap: () => onTap(country),
         );
       },
     );
