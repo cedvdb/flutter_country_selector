@@ -1,6 +1,17 @@
 {
   "@@locale": "pt",
   "noResultMessage": "Sem resultado",
+  "search": "Procurar",
+  "typeToSearch": "Digite aqui para pesquisar um país",
+  "selectCountry": "Selecionar {country}",
+  "@selectCountry": {
+    "description": "Semantic of the search box",
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  }
   "ac_": "Ilha da Ascensão",
   "ad_": "Andorra",
   "ae_": "Emirados Árabes Unidos",
