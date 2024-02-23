@@ -8,14 +8,14 @@ class CountrySelectorLocalizationRu extends CountrySelectorLocalization {
   String get noResultMessage => 'Безрезультатно';
 
   @override
-  String get search => 'Search';
+  String get search => 'Поиск';
 
   @override
-  String get typeToSearch => 'Type here to search for a country';
+  String get typeToSearch => 'Пишите здесь, чтобы найти страну';
 
   @override
   String selectCountry(String country) {
-    return 'Select $country';
+    return 'Выбрана $country';
   }
 
   @override
@@ -178,7 +178,7 @@ class CountrySelectorLocalizationRu extends CountrySelectorLocalization {
   String get cv_ => 'Кабо-Верде';
 
   @override
-  String get cw_ => 'Curaçao';
+  String get cw_ => 'Кюрасао';
 
   @override
   String get cx_ => 'Остров Рождества';
@@ -217,7 +217,7 @@ class CountrySelectorLocalizationRu extends CountrySelectorLocalization {
   String get eg_ => 'Египет';
 
   @override
-  String get eh_ => 'Western Sahara';
+  String get eh_ => 'Западная Сахара';
 
   @override
   String get er_ => 'Эритрея';
@@ -640,7 +640,7 @@ class CountrySelectorLocalizationRu extends CountrySelectorLocalization {
   String get sr_ => 'Суринам';
 
   @override
-  String get ss_ => 'южный Судан';
+  String get ss_ => 'Южный Судан';
 
   @override
   String get st_ => 'Сан-Томе и Принсипи';
@@ -649,7 +649,7 @@ class CountrySelectorLocalizationRu extends CountrySelectorLocalization {
   String get sv_ => 'Эль Сальвадор';
 
   @override
-  String get sx_ => 'Sint Maarten';
+  String get sx_ => 'Синт-Мартен';
 
   @override
   String get sy_ => 'Сирийская Арабская Республика';
@@ -748,7 +748,7 @@ class CountrySelectorLocalizationRu extends CountrySelectorLocalization {
   String get ws_ => 'Самоа';
 
   @override
-  String get xk_ => 'Kosovo';
+  String get xk_ => 'Косово';
 
   @override
   String get ye_ => 'Йемен';
