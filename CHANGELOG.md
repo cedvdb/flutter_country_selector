@@ -1,3 +1,8 @@
+## 1.0.5
+
+* Added missing localizations for pt and ru
+* Upgraded phone_numbers_parser 
+
 ## 1.0.4
 
 * Improve accessibility
