@@ -44,6 +44,7 @@ Use `CountrySelectorLocalization.countryName(isoCode)` when you need to dynamica
   - fa
   - fr
   - hi
+  - hu
   - it
   - ku
   - nb

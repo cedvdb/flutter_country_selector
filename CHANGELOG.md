@@ -1,3 +1,8 @@
+## pending
+
+* Added localizations for hu
+* Fixed fr localizations
+
 ## 1.0.5
 
 * Added missing localizations for pt and ru
