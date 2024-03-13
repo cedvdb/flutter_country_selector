@@ -15,7 +15,7 @@ class CountrySelectorLocalizationFr extends CountrySelectorLocalization {
 
   @override
   String selectCountry(String country) {
-    return 'Selectionner $country';
+    return 'Sélectionner $country';
   }
 
   @override
@@ -505,7 +505,7 @@ class CountrySelectorLocalizationFr extends CountrySelectorLocalization {
   String get ne_ => 'Niger';
 
   @override
-  String get nf_ => 'l\'ile de Norfolk';
+  String get nf_ => 'L\'ile de Norfolk';
 
   @override
   String get ng_ => 'Nigeria';
@@ -667,7 +667,7 @@ class CountrySelectorLocalizationFr extends CountrySelectorLocalization {
   String get td_ => 'Tchad';
 
   @override
-  String get tg_ => 'Aller';
+  String get tg_ => 'Togo';
 
   @override
   String get th_ => 'Thaïlande';
@@ -691,7 +691,7 @@ class CountrySelectorLocalizationFr extends CountrySelectorLocalization {
   String get to_ => 'Tonga';
 
   @override
-  String get tr_ => 'dinde';
+  String get tr_ => 'Turquie';
 
   @override
   String get tt_ => 'Trinité-et-Tobago';

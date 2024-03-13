@@ -3,7 +3,7 @@
   "noResultMessage": "Aucun résultat",
   "search": "Recherche",
   "typeToSearch": "Ecrivez pour rechercher un pays",
-  "selectCountry": "Selectionner {country}",
+  "selectCountry": "Sélectionner {country}",
   "@selectCountry": {
     "description": "Semantic of the search box",
     "placeholders": {
@@ -228,7 +228,7 @@
   "ta_": "Tristan da Cunha",
   "tc_": "îles Turques-et-Caïques",
   "td_": "Tchad",
-  "tg_": "Aller",
+  "tg_": "Togo",
   "th_": "Thaïlande",
   "tj_": "Tadjikistan",
   "tk_": "Tokelau",
@@ -236,7 +236,7 @@
   "tm_": "Turkménistan",
   "tn_": "Tunisie",
   "to_": "Tonga",
-  "tr_": "Dinde",
+  "tr_": "Turquie",
   "tt_": "Trinité-et-Tobago",
   "tv_": "Tuvalu",
   "tw_": "Taïwan",

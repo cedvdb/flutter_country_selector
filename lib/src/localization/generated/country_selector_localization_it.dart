@@ -175,7 +175,7 @@ class CountrySelectorLocalizationIt extends CountrySelectorLocalization {
   String get cu_ => 'Cuba';
 
   @override
-  String get cv_ => 'capo Verde';
+  String get cv_ => 'Capo Verde';
 
   @override
   String get cw_ => 'Curaçao';
@@ -691,7 +691,7 @@ class CountrySelectorLocalizationIt extends CountrySelectorLocalization {
   String get to_ => 'Tonga';
 
   @override
-  String get tr_ => 'tacchino';
+  String get tr_ => 'Tacchino';
 
   @override
   String get tt_ => 'Trinidad e Tobago';
@@ -712,7 +712,7 @@ class CountrySelectorLocalizationIt extends CountrySelectorLocalization {
   String get ug_ => 'Uganda';
 
   @override
-  String get us_ => 'stati Uniti';
+  String get us_ => 'Stati Uniti';
 
   @override
   String get uy_ => 'Uruguay';
