@@ -571,7 +571,7 @@ class CountrySelectorLocalizationZh extends CountrySelectorLocalization {
   String get pt_ => '葡萄牙';
 
   @override
-  String get pw_ => 'u琉';
+  String get pw_ => '帕劳';
 
   @override
   String get py_ => '巴拉圭';

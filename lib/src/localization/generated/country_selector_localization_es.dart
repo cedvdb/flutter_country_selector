@@ -103,7 +103,7 @@ class CountrySelectorLocalizationEs extends CountrySelectorLocalization {
   String get bl_ => 'San Bartolomé';
 
   @override
-  String get bm_ => 'islas Bermudas';
+  String get bm_ => 'Islas Bermudas';
 
   @override
   String get bn_ => 'Brunei Darussalam';
@@ -163,7 +163,7 @@ class CountrySelectorLocalizationEs extends CountrySelectorLocalization {
   String get cm_ => 'Camerún';
 
   @override
-  String get cn_ => 'porcelana';
+  String get cn_ => 'Porcelana';
 
   @override
   String get co_ => 'Colombia';
@@ -448,7 +448,7 @@ class CountrySelectorLocalizationEs extends CountrySelectorLocalization {
   String get mh_ => 'Islas Marshall';
 
   @override
-  String get mk_ => 'macedonia';
+  String get mk_ => 'Macedonia';
 
   @override
   String get ml_ => 'Mali';
@@ -691,7 +691,7 @@ class CountrySelectorLocalizationEs extends CountrySelectorLocalization {
   String get to_ => 'Tonga';
 
   @override
-  String get tr_ => 'pavo';
+  String get tr_ => 'Pavo';
 
   @override
   String get tt_ => 'Trinidad y Tobago';

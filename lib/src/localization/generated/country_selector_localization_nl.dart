@@ -463,7 +463,7 @@ class CountrySelectorLocalizationNl extends CountrySelectorLocalization {
   String get mo_ => 'Macao';
 
   @override
-  String get mp_ => 'noordelijke Mariana eilanden';
+  String get mp_ => 'Noordelijke Mariana eilanden';
 
   @override
   String get mq_ => 'Martinique';
@@ -691,7 +691,7 @@ class CountrySelectorLocalizationNl extends CountrySelectorLocalization {
   String get to_ => 'Tonga';
 
   @override
-  String get tr_ => 'kalkoen';
+  String get tr_ => 'Kalkoen';
 
   @override
   String get tt_ => 'Trinidad en Tobago';
