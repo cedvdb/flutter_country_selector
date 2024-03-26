@@ -16,11 +16,11 @@ dependencies:
 
   intl: ">=0.18.0 <=1.0.0"
   diacritic: ^0.1.5
-  circle_flags: ^4.0.2
+  circle_flags: ^5.0.0
   # for iso codes, phone_numbers_parser needs to stay currently
   # as the flutter_country_selector library needs to be
   # compatible with phone_form_field
-  phone_numbers_parser: ^8.2.0
+  phone_numbers_parser: ^8.2.1
 
 dev_dependencies:
   flutter_test:

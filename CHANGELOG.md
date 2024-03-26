@@ -1,5 +1,7 @@
 ## 1.0.7
 * Fix missing localizations
+* Use newer version of circle_flags
+* Add readme note about overwriting flags
 
 ## 1.0.6
 
