@@ -1,6 +1,17 @@
 {
   "@@locale": "nl",
   "noResultMessage": "Geen resultaat",
+  "search": "Zoekopdracht",
+  "typeToSearch": "Typ hier om naar een land te zoeken",
+  "selectCountry": "Selecteer {country}",
+  "@selectCountry": {
+    "description": "Semantic of the search box",
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
   "ac_": "Hemelvaart Eiland",
   "ad_": "Andorra",
   "ae_": "Verenigde Arabische Emiraten",
@@ -54,6 +65,7 @@
   "cr_": "Costa Rica",
   "cu_": "Cuba",
   "cv_": "Kaapverdië",
+  "cw_": "Curacao",
   "cx_": "Kersteiland",
   "cy_": "Cyprus",
   "cz_": "Tsjechië",
@@ -66,6 +78,7 @@
   "ec_": "Ecuador",
   "ee_": "Estland",
   "eg_": "Egypte",
+  "eh_": "Westelijke Sahara",
   "er_": "Eritrea",
   "es_": "Spanje",
   "et_": "Ethiopië",
@@ -209,6 +222,7 @@
   "ss_": "Zuid Soedan",
   "st_": "Sao Tomé en Principe",
   "sv_": "El Salvador",
+  "sx_": "Sint Maarten",
   "sy_": "Syrische Arabische Republiek",
   "sz_": "Swaziland",
   "ta_": "Tristan da Cunha",
@@ -241,6 +255,7 @@
   "vu_": "Vanuatu",
   "wf_": "Wallis en Futuna",
   "ws_": "Samoa",
+  "xk_": "Kosovo",
   "ye_": "Jemen",
   "yt_": "Mayotte",
   "za_": "Zuid-Afrika",

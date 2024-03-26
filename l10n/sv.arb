@@ -1,6 +1,17 @@
 {
   "@@locale": "sv",
   "noResultMessage": "Inget resultat",
+  "search": "Sök",
+  "typeToSearch": "Skriv här för att söka efter ett land",
+  "selectCountry": "Välj {country}",
+  "@selectCountry": {
+    "description": "Semantic of the search box",
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
   "ac_": "Ascension Island",
   "ad_": "Andorra",
   "ae_": "Förenade Arabemiraten",
@@ -54,6 +65,7 @@
   "cr_": "Costa Rica",
   "cu_": "Kuba",
   "cv_": "Kap Verde",
+  "cw_": "Curaçao",
   "cx_": "Julön",
   "cy_": "Cypern",
   "cz_": "Tjeckien",
@@ -66,6 +78,7 @@
   "ec_": "Ecuador",
   "ee_": "Estland",
   "eg_": "Egypten",
+  "eh_": "Västra Sahara",
   "er_": "Eritrea",
   "es_": "Spanien",
   "et_": "Etiopien",
@@ -209,6 +222,7 @@
   "ss_": "Sydsudan",
   "st_": "São Tomé och Príncipe",
   "sv_": "El Salvador",
+  "sx_": "Sint Maarten",
   "sy_": "Syrien",
   "sz_": "Swaziland",
   "ta_": "Tristan da Cunha",
@@ -241,6 +255,7 @@
   "vu_": "Vanuatu",
   "wf_": "Wallis- och Futunaöarna",
   "ws_": "Samoa",
+  "xk_": "Kosovo",
   "ye_": "Jemen",
   "yt_": "Mayotte",
   "za_": "Sydafrika",

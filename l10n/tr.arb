@@ -1,6 +1,17 @@
 {
   "@@locale": "tr",
   "noResultMessage": "Sonuç yok",
+  "search": "Aramak",
+  "typeToSearch": "Bir ülkeyi aramak için buraya yazın",
+  "selectCountry": "Seçme {country}",
+  "@selectCountry": {
+    "description": "Semantic of the search box",
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
   "ac_": "Yükselme adası",
   "ad_": "Andora",
   "ae_": "Birleşik Arap Emirlikleri",
@@ -54,6 +65,7 @@
   "cr_": "Kosta Rika",
   "cu_": "Küba",
   "cv_": "Cabo Verde",
+  "cw_": "Curacao",
   "cx_": "Christmas Adası",
   "cy_": "Kıbrıs",
   "cz_": "Çek Cumhuriyeti",
@@ -66,6 +78,7 @@
   "ec_": "Ekvador",
   "ee_": "Estonya",
   "eg_": "Mısır",
+  "eh_": "Batı Sahra",
   "er_": "Eritre",
   "es_": "İspanya",
   "et_": "Etiyopya",
@@ -209,6 +222,7 @@
   "ss_": "Güney Sudan",
   "st_": "Sao Tome ve Principe",
   "sv_": "El Salvador",
+  "sx_": "Sint Maarten",
   "sy_": "Suriye",
   "sz_": "Esvati̇ni̇",
   "ta_": "Tristan da Cunha",
@@ -241,6 +255,7 @@
   "vu_": "Vanuatu",
   "wf_": "Wallis ve Futuna",
   "ws_": "Samoa",
+  "xk_": "Kosova",
   "ye_": "Yemen",
   "yt_": "Mayotte",
   "za_": "Güney Afrika",

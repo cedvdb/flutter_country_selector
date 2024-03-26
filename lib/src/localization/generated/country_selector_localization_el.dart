@@ -8,14 +8,14 @@ class CountrySelectorLocalizationEl extends CountrySelectorLocalization {
   String get noResultMessage => 'Κανένα αποτέλεσμα';
 
   @override
-  String get search => 'Search';
+  String get search => 'Αναζήτηση';
 
   @override
-  String get typeToSearch => 'Type here to search for a country';
+  String get typeToSearch => 'Πληκτρολογήστε εδώ για να αναζητήσετε μια χώρα';
 
   @override
   String selectCountry(String country) {
-    return 'Select $country';
+    return 'Επιλέγω $country';
   }
 
   @override
@@ -178,7 +178,7 @@ class CountrySelectorLocalizationEl extends CountrySelectorLocalization {
   String get cv_ => 'Πράσινο Ακρωτήριο';
 
   @override
-  String get cw_ => 'Curaçao';
+  String get cw_ => 'Κουράσω';
 
   @override
   String get cx_ => 'Νησί των Χριστουγέννων';
@@ -217,7 +217,7 @@ class CountrySelectorLocalizationEl extends CountrySelectorLocalization {
   String get eg_ => 'Αίγυπτος';
 
   @override
-  String get eh_ => 'Western Sahara';
+  String get eh_ => 'Δυτική Σαχάρα';
 
   @override
   String get er_ => 'Ερυθραία';
@@ -613,13 +613,13 @@ class CountrySelectorLocalizationEl extends CountrySelectorLocalization {
   String get sg_ => 'Σιγκαπούρη';
 
   @override
-  String get sh_ => 'Saint Helena';
+  String get sh_ => 'Αγία Ελένη';
 
   @override
   String get si_ => 'Σλοβενία';
 
   @override
-  String get sj_ => 'Svalbard and Jan Mayen';
+  String get sj_ => 'Svalbard και Jan Mayen';
 
   @override
   String get sk_ => 'Σλοβακία';
@@ -748,7 +748,7 @@ class CountrySelectorLocalizationEl extends CountrySelectorLocalization {
   String get ws_ => 'Σαμόα';
 
   @override
-  String get xk_ => 'Kosovo';
+  String get xk_ => 'Κοσσυφοπέδιο';
 
   @override
   String get ye_ => 'Γέμενη';

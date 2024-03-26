@@ -1,6 +1,17 @@
 {
   "@@locale": "uz",
   "noResultMessage": "Ma'lumot topilmadi",
+  "search": "Qidirmoq",
+  "typeToSearch": "Mamlakatni qidirish uchun bu yerga yozing",
+  "selectCountry": "Tanlang {country}",
+  "@selectCountry": {
+    "description": "Semantic of the search box",
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
   "ac_": "Ascension Island",
   "ad_": "Andorra",
   "ae_": "BAA",
@@ -54,6 +65,7 @@
   "cr_": "Kosta-Rika",
   "cu_": "Kuba",
   "cv_": "Cape Verde",
+  "cw_": "Kyurasao",
   "cx_": "Christmas Island",
   "cy_": "Cyprus",
   "cz_": "Czech Republic",
@@ -66,6 +78,7 @@
   "ec_": "Ekvador",
   "ee_": "Estoniya",
   "eg_": "Misr",
+  "eh_": "G'arbiy Sahara",
   "er_": "Eritreya",
   "es_": "Ispaniya",
   "et_": "Efiopiya",
@@ -197,7 +210,9 @@
   "sd_": "Sudan",
   "se_": "Shvetsiya",
   "sg_": "Singapur",
+  "sh_": "Muqaddas Yelena",
   "si_": "Slovenia",
+  "sj_": "Svalbard va Yan Mayen",
   "sk_": "Slovakia",
   "sl_": "Sierra Leone",
   "sm_": "San Marino",
@@ -207,6 +222,7 @@
   "ss_": "South Sudan",
   "st_": "Sao Tome and Principe",
   "sv_": "El Salvador",
+  "sx_": "Sint-Marten",
   "sy_": "Suriya",
   "sz_": "Esvatini Qirolligi",
   "ta_": "Tristan da Cunha",
@@ -239,6 +255,7 @@
   "vu_": "Vanuatu",
   "wf_": "Uollis va Futuna",
   "ws_": "Samoa",
+  "xk_": "Kosovo",
   "ye_": "Yaman",
   "yt_": "Mayotte",
   "za_": "JAR",

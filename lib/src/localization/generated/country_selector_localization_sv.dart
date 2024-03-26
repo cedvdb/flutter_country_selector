@@ -8,14 +8,14 @@ class CountrySelectorLocalizationSv extends CountrySelectorLocalization {
   String get noResultMessage => 'Inget resultat';
 
   @override
-  String get search => 'Search';
+  String get search => 'Sök';
 
   @override
-  String get typeToSearch => 'Type here to search for a country';
+  String get typeToSearch => 'Skriv här för att söka efter ett land';
 
   @override
   String selectCountry(String country) {
-    return 'Select $country';
+    return 'Välj $country';
   }
 
   @override
@@ -217,7 +217,7 @@ class CountrySelectorLocalizationSv extends CountrySelectorLocalization {
   String get eg_ => 'Egypten';
 
   @override
-  String get eh_ => 'Western Sahara';
+  String get eh_ => 'Västra Sahara';
 
   @override
   String get er_ => 'Eritrea';

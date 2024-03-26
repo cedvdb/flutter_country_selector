@@ -1,6 +1,21 @@
 {
   "@@locale": "ar",
   "noResultMessage": "لا نتيجة",
+    "search": "يبحث",
+  "typeToSearch": "اكتب هنا للبحث عن دولة",
+  "selectCountry": "{country} يختار",
+  "@selectCountry": {
+    "description": "Semantic of the search box",
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
+  "cw_": "كوراساو",
+  "eh_": "الصحراء الغربية",
+  "sx_": "سينت مارتن",
+  "xk_": "كوسوفو",
   "ac_": "جزيرة أسنسيون",
   "ad_": "أندورا",
   "ae_": "الإمارات العربية المتحدة",

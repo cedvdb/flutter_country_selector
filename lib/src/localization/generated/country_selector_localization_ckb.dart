@@ -8,14 +8,14 @@ class CountrySelectorLocalizationCkb extends CountrySelectorLocalization {
   String get noResultMessage => 'بێ ئه‌نجام';
 
   @override
-  String get search => 'Search';
+  String get search => 'گەڕان';
 
   @override
-  String get typeToSearch => 'Type here to search for a country';
+  String get typeToSearch => 'بۆ گەڕان بەدوای وڵاتێکدا لێرە بنووسە';
 
   @override
   String selectCountry(String country) {
-    return 'Select $country';
+    return '$country دەسنیاشنکردن';
   }
 
   @override
@@ -178,7 +178,7 @@ class CountrySelectorLocalizationCkb extends CountrySelectorLocalization {
   String get cv_ => 'کیپ ڤێردی';
 
   @override
-  String get cw_ => 'Curaçao';
+  String get cw_ => 'کوراساو';
 
   @override
   String get cx_ => 'دوورگەی کریسمس';
@@ -217,7 +217,7 @@ class CountrySelectorLocalizationCkb extends CountrySelectorLocalization {
   String get eg_ => 'میسر';
 
   @override
-  String get eh_ => 'Western Sahara';
+  String get eh_ => 'سەحرای ڕۆژئاوا';
 
   @override
   String get er_ => 'ئێریتریا';
@@ -614,13 +614,13 @@ class CountrySelectorLocalizationCkb extends CountrySelectorLocalization {
   String get sg_ => 'سەنگافورە';
 
   @override
-  String get sh_ => 'Saint Helena';
+  String get sh_ => 'سانت هێلێنا';
 
   @override
   String get si_ => 'سلۆڤینیا';
 
   @override
-  String get sj_ => 'Svalbard and Jan Mayen';
+  String get sj_ => 'سڤاڵبارد و یان ماین';
 
   @override
   String get sk_ => 'سلۆڤاکیا';
@@ -650,7 +650,7 @@ class CountrySelectorLocalizationCkb extends CountrySelectorLocalization {
   String get sv_ => 'سلڤادۆر';
 
   @override
-  String get sx_ => 'Sint Maarten';
+  String get sx_ => 'سینت مارتن';
 
   @override
   String get sy_ => 'کۆماری عەرەبی سوریا';
@@ -749,7 +749,7 @@ class CountrySelectorLocalizationCkb extends CountrySelectorLocalization {
   String get ws_ => 'ساموا';
 
   @override
-  String get xk_ => 'Kosovo';
+  String get xk_ => 'کۆسۆڤۆ';
 
   @override
   String get ye_ => 'یەمەن';

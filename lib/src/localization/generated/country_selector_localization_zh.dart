@@ -8,14 +8,14 @@ class CountrySelectorLocalizationZh extends CountrySelectorLocalization {
   String get noResultMessage => '没有结果';
 
   @override
-  String get search => 'Search';
+  String get search => '搜索';
 
   @override
-  String get typeToSearch => 'Type here to search for a country';
+  String get typeToSearch => '在此处输入以搜索国家/地区';
 
   @override
   String selectCountry(String country) {
-    return 'Select $country';
+    return '选择$country';
   }
 
   @override
@@ -178,7 +178,7 @@ class CountrySelectorLocalizationZh extends CountrySelectorLocalization {
   String get cv_ => '佛得角';
 
   @override
-  String get cw_ => 'Curaçao';
+  String get cw_ => '库拉索';
 
   @override
   String get cx_ => '圣诞岛';
@@ -217,7 +217,7 @@ class CountrySelectorLocalizationZh extends CountrySelectorLocalization {
   String get eg_ => '埃及';
 
   @override
-  String get eh_ => 'Western Sahara';
+  String get eh_ => '撒哈拉沙漠西部';
 
   @override
   String get er_ => '厄立特里亚';
@@ -649,7 +649,7 @@ class CountrySelectorLocalizationZh extends CountrySelectorLocalization {
   String get sv_ => '萨尔瓦多';
 
   @override
-  String get sx_ => 'Sint Maarten';
+  String get sx_ => '圣马丁岛';
 
   @override
   String get sy_ => '阿拉伯叙利亚共和国';
@@ -748,7 +748,7 @@ class CountrySelectorLocalizationZh extends CountrySelectorLocalization {
   String get ws_ => '萨摩亚';
 
   @override
-  String get xk_ => 'Kosovo';
+  String get xk_ => '科索沃';
 
   @override
   String get ye_ => '也门';

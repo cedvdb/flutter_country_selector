@@ -1,3 +1,6 @@
+## 1.0.7
+* Fix missing localizations
+
 ## 1.0.6
 
 * Added localizations for hu

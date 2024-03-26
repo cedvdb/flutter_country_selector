@@ -217,7 +217,7 @@ class CountrySelectorLocalizationHu extends CountrySelectorLocalization {
   String get eg_ => 'Egyiptom';
 
   @override
-  String get eh_ => 'Western Sahara';
+  String get eh_ => 'nyugat-Szahara';
 
   @override
   String get er_ => 'Eritrea';
@@ -748,7 +748,7 @@ class CountrySelectorLocalizationHu extends CountrySelectorLocalization {
   String get ws_ => 'Szamoa';
 
   @override
-  String get xk_ => 'Kosovo';
+  String get xk_ => 'Koszovó';
 
   @override
   String get ye_ => 'Jemen';

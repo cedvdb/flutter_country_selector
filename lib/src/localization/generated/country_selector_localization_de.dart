@@ -8,14 +8,14 @@ class CountrySelectorLocalizationDe extends CountrySelectorLocalization {
   String get noResultMessage => 'Kein Ergebnis';
 
   @override
-  String get search => 'Search';
+  String get search => 'Suchen';
 
   @override
-  String get typeToSearch => 'Type here to search for a country';
+  String get typeToSearch => 'Geben Sie hier ein, um nach einem Land zu suchen';
 
   @override
   String selectCountry(String country) {
-    return 'Select $country';
+    return 'Land $country';
   }
 
   @override
@@ -178,7 +178,7 @@ class CountrySelectorLocalizationDe extends CountrySelectorLocalization {
   String get cv_ => 'Kap Verde';
 
   @override
-  String get cw_ => 'Curaçao';
+  String get cw_ => 'Curacao';
 
   @override
   String get cx_ => 'Weihnachtsinsel';
@@ -217,7 +217,7 @@ class CountrySelectorLocalizationDe extends CountrySelectorLocalization {
   String get eg_ => 'Ägypten';
 
   @override
-  String get eh_ => 'Western Sahara';
+  String get eh_ => 'Westsahara';
 
   @override
   String get er_ => 'Eritrea';
