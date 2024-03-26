@@ -1,4 +1,4 @@
-## pending
+## 1.0.6
 
 * Added localizations for hu
 * Fixed fr localizations
