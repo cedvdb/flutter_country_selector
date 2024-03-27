@@ -32,7 +32,7 @@ Navigator.of(context).push(
 
 ### Dynamic localization
 
-Use `CountrySelectorLocalization.countryName(isoCode)` when you need to dynamically localize the name of a country.
+Use `CountrySelectorLocalization.of(context)?.countryName(isoCode)` when you need to dynamically localize the name of a country.
 
 ### Supported languages
 

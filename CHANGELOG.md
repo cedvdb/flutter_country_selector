@@ -1,3 +1,7 @@
+## 1.0.8
+* Fix translation el
+* Update readme 
+
 ## 1.0.7
 * Fix missing localizations
 * Use newer version of circle_flags
