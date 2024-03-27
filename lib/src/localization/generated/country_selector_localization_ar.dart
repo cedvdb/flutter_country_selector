@@ -2,7 +2,7 @@ import 'country_selector_localization.dart';
 
 /// The translations for Arabic (`ar`).
 class CountrySelectorLocalizationAr extends CountrySelectorLocalization {
-  CountrySelectorLocalizationAr([String locale = 'ar']) : super(locale);
+  CountrySelectorLocalizationAr([super.locale = 'ar']);
 
   @override
   String get noResultMessage => 'لا نتيجة';

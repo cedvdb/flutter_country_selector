@@ -2,7 +2,7 @@ import 'country_selector_localization.dart';
 
 /// The translations for Central Kurdish (`ckb`).
 class CountrySelectorLocalizationCkb extends CountrySelectorLocalization {
-  CountrySelectorLocalizationCkb([String locale = 'ckb']) : super(locale);
+  CountrySelectorLocalizationCkb([super.locale = 'ckb']);
 
   @override
   String get noResultMessage => 'بێ ئه‌نجام';
