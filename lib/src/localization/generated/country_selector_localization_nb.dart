@@ -2,7 +2,7 @@ import 'country_selector_localization.dart';
 
 /// The translations for Norwegian Bokmål (`nb`).
 class CountrySelectorLocalizationNb extends CountrySelectorLocalization {
-  CountrySelectorLocalizationNb([super.locale = 'nb']);
+  CountrySelectorLocalizationNb([String locale = 'nb']) : super(locale);
 
   @override
   String get noResultMessage => 'Ingen resultater';

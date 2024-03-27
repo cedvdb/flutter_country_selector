@@ -2,7 +2,7 @@ import 'country_selector_localization.dart';
 
 /// The translations for Dutch Flemish (`nl`).
 class CountrySelectorLocalizationNl extends CountrySelectorLocalization {
-  CountrySelectorLocalizationNl([super.locale = 'nl']);
+  CountrySelectorLocalizationNl([String locale = 'nl']) : super(locale);
 
   @override
   String get noResultMessage => 'Geen resultaat';

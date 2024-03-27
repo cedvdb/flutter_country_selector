@@ -2,7 +2,7 @@ import 'country_selector_localization.dart';
 
 /// The translations for Swedish (`sv`).
 class CountrySelectorLocalizationSv extends CountrySelectorLocalization {
-  CountrySelectorLocalizationSv([super.locale = 'sv']);
+  CountrySelectorLocalizationSv([String locale = 'sv']) : super(locale);
 
   @override
   String get noResultMessage => 'Inget resultat';

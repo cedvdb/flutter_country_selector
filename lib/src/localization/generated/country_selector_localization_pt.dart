@@ -2,7 +2,7 @@ import 'country_selector_localization.dart';
 
 /// The translations for Portuguese (`pt`).
 class CountrySelectorLocalizationPt extends CountrySelectorLocalization {
-  CountrySelectorLocalizationPt([super.locale = 'pt']);
+  CountrySelectorLocalizationPt([String locale = 'pt']) : super(locale);
 
   @override
   String get noResultMessage => 'Sem resultado';
