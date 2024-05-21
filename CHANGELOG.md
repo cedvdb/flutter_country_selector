@@ -1,3 +1,6 @@
+## 1.0.9
+* Fix translation in portugese
+
 ## 1.0.8
 * Fix translation el
 * Update readme 
