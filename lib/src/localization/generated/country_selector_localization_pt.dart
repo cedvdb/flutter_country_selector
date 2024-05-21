@@ -691,7 +691,7 @@ class CountrySelectorLocalizationPt extends CountrySelectorLocalization {
   String get to_ => 'Tonga';
 
   @override
-  String get tr_ => 'Peru';
+  String get tr_ => 'Turquia';
 
   @override
   String get tt_ => 'Trinidad e Tobago';
