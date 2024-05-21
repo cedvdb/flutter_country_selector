@@ -2,7 +2,7 @@ import 'country_selector_localization.dart';
 
 /// The translations for English (`en`).
 class CountrySelectorLocalizationEn extends CountrySelectorLocalization {
-  CountrySelectorLocalizationEn([String locale = 'en']) : super(locale);
+  CountrySelectorLocalizationEn([super.locale = 'en']);
 
   @override
   String get noResultMessage => 'No result';

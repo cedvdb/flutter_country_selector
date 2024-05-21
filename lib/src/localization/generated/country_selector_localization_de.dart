@@ -2,7 +2,7 @@ import 'country_selector_localization.dart';
 
 /// The translations for German (`de`).
 class CountrySelectorLocalizationDe extends CountrySelectorLocalization {
-  CountrySelectorLocalizationDe([String locale = 'de']) : super(locale);
+  CountrySelectorLocalizationDe([super.locale = 'de']);
 
   @override
   String get noResultMessage => 'Kein Ergebnis';
