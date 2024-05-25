@@ -75,9 +75,8 @@ abstract class CountrySelectorBase extends StatefulWidget {
         searchAutofocus = searchAutofocus ?? kIsWeb;
 }
 
-abstract class CountrySelectorBaseState<W extends CountrySelectorBase>
-    extends State<W> {
-  late final CountrySelectorController controller;
+abstract class CountrySelectorBaseState<W extends CountrySelectorBase> extends State<W> {
+  late CountrySelectorController controller;
   String searchText = '';
 
   @override
