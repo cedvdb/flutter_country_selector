@@ -1,3 +1,6 @@
+## 1.0.10
+* Added localizations for vi
+
 ## 1.0.9
 * Fix translation in portugese
 
