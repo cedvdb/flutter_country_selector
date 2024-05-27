@@ -55,6 +55,7 @@ Use `CountrySelectorLocalization.of(context)?.countryName(isoCode)` when you nee
   - tr
   - uk
   - uz
+  - vi
   - zh  
 
 ### Setup
