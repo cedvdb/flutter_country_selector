@@ -2,7 +2,7 @@ import 'country_selector_localization.dart';
 
 /// The translations for Modern Greek (`el`).
 class CountrySelectorLocalizationEl extends CountrySelectorLocalization {
-  CountrySelectorLocalizationEl([super.locale = 'el']);
+  CountrySelectorLocalizationEl([String locale = 'el']) : super(locale);
 
   @override
   String get noResultMessage => 'Κανένα αποτέλεσμα';
