@@ -46,6 +46,7 @@ Use `CountrySelectorLocalization.of(context)?.countryName(isoCode)` when you nee
   - hi
   - hu
   - it
+  - ko
   - ku
   - nb
   - nl

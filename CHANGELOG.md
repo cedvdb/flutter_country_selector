@@ -1,3 +1,6 @@
+## 1.0.11
+* Added localizations for Korean
+
 ## 1.0.10
 * Added localizations for vi
 
