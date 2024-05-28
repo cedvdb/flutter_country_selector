@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
+
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
 
@@ -16,6 +17,7 @@ import 'country_selector_localization_fr.dart';
 import 'country_selector_localization_hi.dart';
 import 'country_selector_localization_hu.dart';
 import 'country_selector_localization_it.dart';
+import 'country_selector_localization_ko.dart';
 import 'country_selector_localization_ku.dart';
 import 'country_selector_localization_nb.dart';
 import 'country_selector_localization_nl.dart';
@@ -124,6 +126,7 @@ abstract class CountrySelectorLocalization {
     Locale('hi'),
     Locale('hu'),
     Locale('it'),
+    Locale('ko'),
     Locale('ku'),
     Locale('nb'),
     Locale('nl'),
@@ -1679,6 +1682,7 @@ class _CountrySelectorLocalizationDelegate
         'hi',
         'hu',
         'it',
+        'ko',
         'ku',
         'nb',
         'nl',
@@ -1721,6 +1725,8 @@ CountrySelectorLocalization lookupCountrySelectorLocalization(Locale locale) {
       return CountrySelectorLocalizationHu();
     case 'it':
       return CountrySelectorLocalizationIt();
+    case 'ko':
+      return CountrySelectorLocalizationKo();
     case 'ku':
       return CountrySelectorLocalizationKu();
     case 'nb':
