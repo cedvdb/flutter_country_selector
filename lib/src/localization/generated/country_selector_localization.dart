@@ -27,6 +27,7 @@ import 'country_selector_localization_sv.dart';
 import 'country_selector_localization_tr.dart';
 import 'country_selector_localization_uk.dart';
 import 'country_selector_localization_uz.dart';
+import 'country_selector_localization_vi.dart';
 import 'country_selector_localization_zh.dart';
 
 /// Callers can lookup localized strings with an instance of CountrySelectorLocalization
@@ -135,6 +136,7 @@ abstract class CountrySelectorLocalization {
     Locale('tr'),
     Locale('uk'),
     Locale('uz'),
+    Locale('vi'),
     Locale('zh')
   ];
 
@@ -1690,6 +1692,7 @@ class _CountrySelectorLocalizationDelegate
         'tr',
         'uk',
         'uz',
+        'vi',
         'zh'
       ].contains(locale.languageCode);
 
@@ -1742,6 +1745,8 @@ CountrySelectorLocalization lookupCountrySelectorLocalization(Locale locale) {
       return CountrySelectorLocalizationUk();
     case 'uz':
       return CountrySelectorLocalizationUz();
+    case 'vi':
+      return CountrySelectorLocalizationVi();
     case 'zh':
       return CountrySelectorLocalizationZh();
   }
