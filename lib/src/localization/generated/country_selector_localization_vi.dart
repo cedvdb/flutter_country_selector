@@ -367,7 +367,7 @@ class CountrySelectorLocalizationVi extends CountrySelectorLocalization {
   String get kg_ => 'Kyrgyzstan';
 
   @override
-  String get kh_ => 'Cambodia';
+  String get kh_ => 'Campuchia';
 
   @override
   String get ki_ => 'Kiribati';
@@ -394,7 +394,7 @@ class CountrySelectorLocalizationVi extends CountrySelectorLocalization {
   String get kz_ => 'Kazakhstan';
 
   @override
-  String get la_ => 'Laos';
+  String get la_ => 'Lào';
 
   @override
   String get lb_ => 'Lebanon';
@@ -505,7 +505,7 @@ class CountrySelectorLocalizationVi extends CountrySelectorLocalization {
   String get ne_ => 'Niger';
 
   @override
-  String get nf_ => 'Norfolk Island';
+  String get nf_ => 'Đảo Norfolk';
 
   @override
   String get ng_ => 'Nigeria';
@@ -589,13 +589,13 @@ class CountrySelectorLocalizationVi extends CountrySelectorLocalization {
   String get rs_ => 'Serbia';
 
   @override
-  String get ru_ => 'Russia';
+  String get ru_ => 'Liên Bang Nga';
 
   @override
   String get rw_ => 'Rwanda';
 
   @override
-  String get sa_ => 'Ả Rập Saudi';
+  String get sa_ => 'Ả Rập Saudi (Ả Rập Xê Út)';
 
   @override
   String get sb_ => 'Quần đảo Solomon';
@@ -712,7 +712,7 @@ class CountrySelectorLocalizationVi extends CountrySelectorLocalization {
   String get ug_ => 'Uganda';
 
   @override
-  String get us_ => 'United States';
+  String get us_ => 'Hoa Kỳ (Mỹ)';
 
   @override
   String get uy_ => 'Uruguay';

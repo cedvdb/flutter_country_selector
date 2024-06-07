@@ -1,9 +1,11 @@
+## 1.0.12
+* Fix translation in Vietnamese
+
 ## 1.0.11
 * Added localizations for vi
 
 ## 1.0.10
 * Added localizations for Korean
-
 
 ## 1.0.9
 * Fix translation in portugese
