@@ -367,7 +367,7 @@ class CountrySelectorLocalizationVi extends CountrySelectorLocalization {
   String get kg_ => 'Kyrgyzstan';
 
   @override
-  String get kh_ => 'Cam-pu-chia';
+  String get kh_ => 'Campuchia';
 
   @override
   String get ki_ => 'Kiribati';
