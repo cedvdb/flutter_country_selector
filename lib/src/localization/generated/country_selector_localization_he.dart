@@ -70,7 +70,7 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get ax_ => 'איי אולנד';
 
   @override
-  String get az_ => 'אזרבייג'ן';
+  String get az_ => 'אזרבייג\'ן';
 
   @override
   String get ba_ => 'בוסניה והרצגובינה';
@@ -157,7 +157,7 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get ck_ => 'איי קוק';
 
   @override
-  String get cl_ => 'צ'ילה';
+  String get cl_ => 'צ\'ילה';
 
   @override
   String get cm_ => 'קמרון';
@@ -187,13 +187,13 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get cy_ => 'קפריסין';
 
   @override
-  String get cz_ => 'הרפובליקה הצ'כית';
+  String get cz_ => 'הרפובליקה הצ\'כית';
 
   @override
   String get de_ => 'גרמניה';
 
   @override
-  String get dj_ => 'ג'יבוטי';
+  String get dj_ => 'ג\'יבוטי';
 
   @override
   String get dk_ => 'דנמרק';
@@ -205,7 +205,7 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get do_ => 'הרפובליקה הדומיניקנית';
 
   @override
-  String get dz_ => 'אלג'יריה';
+  String get dz_ => 'אלג\'יריה';
 
   @override
   String get ec_ => 'אקוודור';
@@ -232,7 +232,7 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get fi_ => 'פינלנד';
 
   @override
-  String get fj_ => 'פיג'י';
+  String get fj_ => 'פיג\'י';
 
   @override
   String get fk_ => 'איי פוקלנד (מאלבינס)';
@@ -289,7 +289,7 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get gr_ => 'יוון';
 
   @override
-  String get gs_ => 'איי ג'ורג'יה הדרומית ואיי סנדוויץ' הדרומיים';
+  String get gs_ => 'איי ג\'ורג\'יה הדרומית ואיי סנדוויץ\' הדרומיים';
 
   @override
   String get gt_ => 'גואטמלה';
@@ -349,10 +349,10 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get it_ => 'איטליה';
 
   @override
-  String get je_ => 'ג'רזי';
+  String get je_ => 'ג\'רזי';
 
   @override
-  String get jm_ => 'ג'מייקה';
+  String get jm_ => 'ג\'מייקה';
 
   @override
   String get jo_ => 'ירדן';
@@ -502,7 +502,7 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get nc_ => 'קלדוניה החדשה';
 
   @override
-  String get ne_ => 'ניז'ר';
+  String get ne_ => 'ניז\'ר';
 
   @override
   String get nf_ => 'איי נורפוק';
@@ -664,7 +664,7 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get tc_ => 'איי טורקס וקאיקוס';
 
   @override
-  String get td_ => 'צ'אד';
+  String get td_ => 'צ\'אד';
 
   @override
   String get tg_ => 'טוגו';
@@ -673,7 +673,7 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get th_ => 'תאילנד';
 
   @override
-  String get tj_ => 'טג'יקיסטן';
+  String get tj_ => 'טג\'יקיסטן';
 
   @override
   String get tk_ => 'טוקלאו';
