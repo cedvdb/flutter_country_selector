@@ -43,6 +43,7 @@ Use `CountrySelectorLocalization.of(context)?.countryName(isoCode)` when you nee
   - es
   - fa
   - fr
+  - he
   - hi
   - hu
   - it
