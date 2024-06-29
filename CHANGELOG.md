@@ -2,9 +2,6 @@
 * Fix translation in Vietnamese
 * Add localizations for Hebrew
 
-## 1.0.12
-* Fix translation in Vietnamese
-
 ## 1.0.11
 * Added localizations for vi
 
