@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
-
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
 
@@ -14,11 +13,9 @@ import 'country_selector_localization_en.dart';
 import 'country_selector_localization_es.dart';
 import 'country_selector_localization_fa.dart';
 import 'country_selector_localization_fr.dart';
-import 'country_selector_localization_he.dart';
 import 'country_selector_localization_hi.dart';
 import 'country_selector_localization_hu.dart';
 import 'country_selector_localization_it.dart';
-import 'country_selector_localization_ko.dart';
 import 'country_selector_localization_ku.dart';
 import 'country_selector_localization_nb.dart';
 import 'country_selector_localization_nl.dart';
@@ -27,9 +24,12 @@ import 'country_selector_localization_ru.dart';
 import 'country_selector_localization_sv.dart';
 import 'country_selector_localization_tr.dart';
 import 'country_selector_localization_uk.dart';
+import 'country_selector_localization_ur.dart';
 import 'country_selector_localization_uz.dart';
 import 'country_selector_localization_vi.dart';
 import 'country_selector_localization_zh.dart';
+
+// ignore_for_file: type=lint
 
 /// Callers can lookup localized strings with an instance of CountrySelectorLocalization
 /// returned by `CountrySelectorLocalization.of(context)`.
@@ -124,11 +124,9 @@ abstract class CountrySelectorLocalization {
     Locale('es'),
     Locale('fa'),
     Locale('fr'),
-    Locale('he'),
     Locale('hi'),
     Locale('hu'),
     Locale('it'),
-    Locale('ko'),
     Locale('ku'),
     Locale('nb'),
     Locale('nl'),
@@ -137,6 +135,7 @@ abstract class CountrySelectorLocalization {
     Locale('sv'),
     Locale('tr'),
     Locale('uk'),
+    Locale('ur'),
     Locale('uz'),
     Locale('vi'),
     Locale('zh')
@@ -1681,11 +1680,9 @@ class _CountrySelectorLocalizationDelegate
         'es',
         'fa',
         'fr',
-        'he',
         'hi',
         'hu',
         'it',
-        'ko',
         'ku',
         'nb',
         'nl',
@@ -1694,6 +1691,7 @@ class _CountrySelectorLocalizationDelegate
         'sv',
         'tr',
         'uk',
+        'ur',
         'uz',
         'vi',
         'zh'
@@ -1722,16 +1720,12 @@ CountrySelectorLocalization lookupCountrySelectorLocalization(Locale locale) {
       return CountrySelectorLocalizationFa();
     case 'fr':
       return CountrySelectorLocalizationFr();
-    case 'he':
-      return CountrySelectorLocalizationHe();
     case 'hi':
       return CountrySelectorLocalizationHi();
     case 'hu':
       return CountrySelectorLocalizationHu();
     case 'it':
       return CountrySelectorLocalizationIt();
-    case 'ko':
-      return CountrySelectorLocalizationKo();
     case 'ku':
       return CountrySelectorLocalizationKu();
     case 'nb':
@@ -1748,6 +1742,8 @@ CountrySelectorLocalization lookupCountrySelectorLocalization(Locale locale) {
       return CountrySelectorLocalizationTr();
     case 'uk':
       return CountrySelectorLocalizationUk();
+    case 'ur':
+      return CountrySelectorLocalizationUr();
     case 'uz':
       return CountrySelectorLocalizationUz();
     case 'vi':

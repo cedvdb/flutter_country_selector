@@ -1,8 +1,10 @@
 import 'country_selector_localization.dart';
 
+// ignore_for_file: type=lint
+
 /// The translations for Persian (`fa`).
 class CountrySelectorLocalizationFa extends CountrySelectorLocalization {
-  CountrySelectorLocalizationFa([super.locale = 'fa']);
+  CountrySelectorLocalizationFa([String locale = 'fa']) : super(locale);
 
   @override
   String get noResultMessage => 'بدون نتیجه';

@@ -1,8 +1,10 @@
 import 'country_selector_localization.dart';
 
+// ignore_for_file: type=lint
+
 /// The translations for Chinese (`zh`).
 class CountrySelectorLocalizationZh extends CountrySelectorLocalization {
-  CountrySelectorLocalizationZh([super.locale = 'zh']);
+  CountrySelectorLocalizationZh([String locale = 'zh']) : super(locale);
 
   @override
   String get noResultMessage => '没有结果';
