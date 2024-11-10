@@ -1,8 +1,10 @@
 import 'country_selector_localization.dart';
 
+// ignore_for_file: type=lint
+
 /// The translations for Turkish (`tr`).
 class CountrySelectorLocalizationTr extends CountrySelectorLocalization {
-  CountrySelectorLocalizationTr([super.locale = 'tr']);
+  CountrySelectorLocalizationTr([String locale = 'tr']) : super(locale);
 
   @override
   String get noResultMessage => 'Sonuç yok';

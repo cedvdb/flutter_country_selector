@@ -1,8 +1,10 @@
 import 'country_selector_localization.dart';
 
+// ignore_for_file: type=lint
+
 /// The translations for Ukrainian (`uk`).
 class CountrySelectorLocalizationUk extends CountrySelectorLocalization {
-  CountrySelectorLocalizationUk([super.locale = 'uk']);
+  CountrySelectorLocalizationUk([String locale = 'uk']) : super(locale);
 
   @override
   String get noResultMessage => 'Немає результату';

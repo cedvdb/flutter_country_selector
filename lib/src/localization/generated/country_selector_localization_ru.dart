@@ -1,8 +1,10 @@
 import 'country_selector_localization.dart';
 
+// ignore_for_file: type=lint
+
 /// The translations for Russian (`ru`).
 class CountrySelectorLocalizationRu extends CountrySelectorLocalization {
-  CountrySelectorLocalizationRu([super.locale = 'ru']);
+  CountrySelectorLocalizationRu([String locale = 'ru']) : super(locale);
 
   @override
   String get noResultMessage => 'Безрезультатно';
