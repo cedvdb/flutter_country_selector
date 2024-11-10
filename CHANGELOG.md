@@ -1,7 +1,6 @@
 ## 1.0.13
 
 * Add localizations for Urdu
-* Update readme
 
 ## 1.0.12
 
