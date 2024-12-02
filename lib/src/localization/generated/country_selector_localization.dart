@@ -6,6 +6,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
 
 import 'country_selector_localization_ar.dart';
+import 'country_selector_localization_ca.dart';
 import 'country_selector_localization_ckb.dart';
 import 'country_selector_localization_de.dart';
 import 'country_selector_localization_el.dart';
@@ -117,6 +118,7 @@ abstract class CountrySelectorLocalization {
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
     Locale('ar'),
+    Locale('ca'),
     Locale('ckb'),
     Locale('de'),
     Locale('el'),
@@ -1673,6 +1675,7 @@ class _CountrySelectorLocalizationDelegate
   @override
   bool isSupported(Locale locale) => <String>[
         'ar',
+        'ca',
         'ckb',
         'de',
         'el',
@@ -1706,6 +1709,8 @@ CountrySelectorLocalization lookupCountrySelectorLocalization(Locale locale) {
   switch (locale.languageCode) {
     case 'ar':
       return CountrySelectorLocalizationAr();
+    case 'ca':
+      return CountrySelectorLocalizationCa();
     case 'ckb':
       return CountrySelectorLocalizationCkb();
     case 'de':
