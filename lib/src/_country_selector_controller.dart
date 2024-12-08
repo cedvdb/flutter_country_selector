@@ -20,7 +20,7 @@ class CountrySelectorController with ChangeNotifier {
     List<IsoCode> countriesIsoCode,
     List<IsoCode> favoriteCountriesIsoCode,
   ) {
-    _countries = _buildLocalizedCountryList(context, countriesIsoCode);
+    _countries = _buildLocalizedCountryList(context, countriesIsoCode)..sort((a, b) => a.name.compareTo(b.name));
     _favoriteCountries =
         _buildLocalizedCountryList(context, favoriteCountriesIsoCode);
     _filteredCountries = _countries;
@@ -60,7 +60,6 @@ class CountrySelectorController with ChangeNotifier {
             localization.countryName(isoCode),
           ),
         )
-        .toList()
-      ..sort((a, b) => a.name.compareTo(b.name));
+        .toList();
   }
 }
