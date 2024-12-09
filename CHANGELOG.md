@@ -1,3 +1,7 @@
+## 1.0.14
+
+* Fix: Ensure sorting is applied only to the country list and not to favorite countries
+
 ## 1.0.13
 
 * Add localizations for Urdu
