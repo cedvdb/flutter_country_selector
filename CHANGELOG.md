@@ -1,3 +1,7 @@
+## 1.0.14
+
+* Add Catalan
+
 ## 1.0.13
 
 * Add localizations for Urdu
