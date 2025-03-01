@@ -1,3 +1,7 @@
+## 1.0.15
+
+* Added fix for Hebrew localization
+
 ## 1.0.14
 
 * Add Catalan
