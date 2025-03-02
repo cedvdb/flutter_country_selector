@@ -1,11 +1,13 @@
 import 'country_selector_localization.dart';
 
+// ignore_for_file: type=lint
+
 /// The translations for Hebrew (`he`).
 class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
-  CountrySelectorLocalizationHe([super.locale = 'he']);
+  CountrySelectorLocalizationHe([String locale = 'he']) : super(locale);
 
   @override
-  String get noResultMessage => 'אין תוצאה';
+  String get noResultMessage => 'אין תוצאות';
 
   @override
   String get search => 'חיפוש';
@@ -15,11 +17,11 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
 
   @override
   String selectCountry(String country) {
-    return 'בחר $country';
+    return 'בחירת $country';
   }
 
   @override
-  String get ac_ => 'אי אסנשן';
+  String get ac_ => 'אסנשן';
 
   @override
   String get ad_ => 'אנדורה';
@@ -34,7 +36,7 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get ag_ => 'אנטיגואה וברבודה';
 
   @override
-  String get ai_ => 'אנגווילה';
+  String get ai_ => 'אנגוילה';
 
   @override
   String get al_ => 'אלבניה';
@@ -49,7 +51,7 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get ao_ => 'אנגולה';
 
   @override
-  String get aq_ => 'אנטארקטיקה';
+  String get aq_ => 'אנטרטיקה';
 
   @override
   String get ar_ => 'ארגנטינה';
@@ -67,10 +69,10 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get aw_ => 'ארובה';
 
   @override
-  String get ax_ => 'איי אולנד';
+  String get ax_ => 'אולנד';
 
   @override
-  String get az_ => 'אזרבייג\'ן';
+  String get az_ => 'אזרבייג\'אן';
 
   @override
   String get ba_ => 'בוסניה והרצגובינה';
@@ -187,7 +189,7 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get cy_ => 'קפריסין';
 
   @override
-  String get cz_ => 'הרפובליקה הצ\'כית';
+  String get cz_ => 'צ\'כיה';
 
   @override
   String get de_ => 'גרמניה';
@@ -235,7 +237,7 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get fj_ => 'פיג\'י';
 
   @override
-  String get fk_ => 'איי פוקלנד (מאלבינס)';
+  String get fk_ => 'איי מאלבינס (איי פוקלנד)';
 
   @override
   String get fm_ => 'מיקרונזיה';
@@ -250,7 +252,7 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get ga_ => 'גאבון';
 
   @override
-  String get gb_ => 'הממלכה המאוחדת';
+  String get gb_ => 'בריטניה';
 
   @override
   String get gd_ => 'גרנדה';
@@ -259,7 +261,7 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get ge_ => 'גאורגיה';
 
   @override
-  String get gf_ => 'גיאנה הצרפתית';
+  String get gf_ => 'גויאנה הצרפתית';
 
   @override
   String get gg_ => 'גרנזי';
@@ -301,7 +303,7 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get gw_ => 'גינאה-ביסאו';
 
   @override
-  String get gy_ => 'גיאנה';
+  String get gy_ => 'גויאנה';
 
   @override
   String get hk_ => 'הונג קונג';
@@ -334,7 +336,7 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get in_ => 'הודו';
 
   @override
-  String get io_ => 'טריטוריה בריטית באוקיינוס ההודי';
+  String get io_ => 'הטריטוריה הבריטית באוקיינוס ההודי';
 
   @override
   String get iq_ => 'עיראק';
@@ -370,10 +372,10 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get kh_ => 'קמבודיה';
 
   @override
-  String get ki_ => 'קיריבטי';
+  String get ki_ => 'קיריבאטי';
 
   @override
-  String get km_ => 'קומורו';
+  String get km_ => 'איי קומורו';
 
   @override
   String get kn_ => 'סנט קיטס ונוויס';
@@ -385,7 +387,7 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get kr_ => 'קוריאה הדרומית';
 
   @override
-  String get kw_ => 'כווית';
+  String get kw_ => 'כוויית';
 
   @override
   String get ky_ => 'איי קיימן';
@@ -439,7 +441,7 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get me_ => 'מונטנגרו';
 
   @override
-  String get mf_ => 'סנט מרטן';
+  String get mf_ => 'סן מרטן';
 
   @override
   String get mg_ => 'מדגסקר';
@@ -448,7 +450,7 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get mh_ => 'איי מרשל';
 
   @override
-  String get mk_ => 'מקדוניה';
+  String get mk_ => 'מקדוניה הצפונית';
 
   @override
   String get ml_ => 'מאלי';
@@ -472,7 +474,7 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get mr_ => 'מאוריטניה';
 
   @override
-  String get ms_ => 'מונסראט';
+  String get ms_ => 'מונטסראט';
 
   @override
   String get mt_ => 'מלטה';
@@ -505,7 +507,7 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get ne_ => 'ניז\'ר';
 
   @override
-  String get nf_ => 'איי נורפוק';
+  String get nf_ => 'האי נורפולק';
 
   @override
   String get ng_ => 'ניגריה';
@@ -529,7 +531,7 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get nu_ => 'ניואה';
 
   @override
-  String get nz_ => 'ניו זילנד';
+  String get nz_ => 'ניו-זילנד';
 
   @override
   String get om_ => 'עומאן';
@@ -544,10 +546,10 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get pf_ => 'פולינזיה הצרפתית';
 
   @override
-  String get pg_ => 'פפואה גינאה החדשה';
+  String get pg_ => 'פפואה ניו גינאה';
 
   @override
-  String get ph_ => 'פיליפינים';
+  String get ph_ => 'הפיליפינים';
 
   @override
   String get pk_ => 'פקיסטן';
@@ -556,10 +558,10 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get pl_ => 'פולין';
 
   @override
-  String get pm_ => 'סן פייר ומיקלון';
+  String get pm_ => 'סנט פייר ומיקלון';
 
   @override
-  String get pn_ => 'פיטקרן';
+  String get pn_ => 'איי פיטקיירן';
 
   @override
   String get pr_ => 'פוארטו ריקו';
@@ -592,7 +594,7 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get ru_ => 'רוסיה';
 
   @override
-  String get rw_ => 'רואנדה';
+  String get rw_ => 'רוואנדה';
 
   @override
   String get sa_ => 'ערב הסעודית';
@@ -601,13 +603,13 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get sb_ => 'איי שלמה';
 
   @override
-  String get sc_ => 'איי סיישל';
+  String get sc_ => 'סיישל';
 
   @override
-  String get sd_ => 'סודן';
+  String get sd_ => 'סודאן';
 
   @override
-  String get se_ => 'שבדיה';
+  String get se_ => 'שוודיה';
 
   @override
   String get sg_ => 'סינגפור';
@@ -649,13 +651,13 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get sv_ => 'אל סלבדור';
 
   @override
-  String get sx_ => 'סינט מארטן';
+  String get sx_ => 'סנט מארטן';
 
   @override
   String get sy_ => 'סוריה';
 
   @override
-  String get sz_ => 'סווזילנד';
+  String get sz_ => 'אסוואטיני';
 
   @override
   String get ta_ => 'טריסטן דה קונה';
@@ -679,7 +681,7 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get tk_ => 'טוקלאו';
 
   @override
-  String get tl_ => 'טימור-לסטה';
+  String get tl_ => 'מזרח טימור';
 
   @override
   String get tm_ => 'טורקמניסטן';
@@ -721,7 +723,7 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get uz_ => 'אוזבקיסטן';
 
   @override
-  String get va_ => 'הוותיקן';
+  String get va_ => 'וותיקן';
 
   @override
   String get vc_ => 'סנט וינסנט והגרנדינים';
@@ -742,7 +744,7 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get vu_ => 'ונואטו';
 
   @override
-  String get wf_ => 'איי ווליס ופוטונה';
+  String get wf_ => 'ואליס ופוטונה';
 
   @override
   String get ws_ => 'סמואה';
@@ -754,7 +756,7 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get ye_ => 'תימן';
 
   @override
-  String get yt_ => 'מאיו';
+  String get yt_ => 'מאיוט';
 
   @override
   String get za_ => 'דרום אפריקה';
@@ -763,5 +765,5 @@ class CountrySelectorLocalizationHe extends CountrySelectorLocalization {
   String get zm_ => 'זמביה';
 
   @override
-  String get zw_ => 'זימבבואה';
+  String get zw_ => 'זימבאבווה';
 }
