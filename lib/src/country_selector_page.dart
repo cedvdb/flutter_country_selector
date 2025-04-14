@@ -34,7 +34,6 @@ class CountrySelectorPageState extends CountrySelectorBaseState {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        elevation: 2,
         shadowColor: Theme.of(context).colorScheme.shadow,
         title: SearchBox(
           autofocus: widget.searchAutofocus,

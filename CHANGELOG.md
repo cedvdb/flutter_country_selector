@@ -1,3 +1,7 @@
+## 1.0.16
+
+* Use theme default for `AppBar` elevation.
+
 ## 1.0.15
 
 * Added fix for Hebrew localization
