@@ -1,6 +1,6 @@
 name: flutter_country_selector
 description: how a country picker to select a country
-version: 1.0.16
+version: 1.0.17
 repository: https://github.com/cedvdb/flutter_country_selector
 homepage: https://github.com/cedvdb/flutter_country_selector
 
@@ -25,6 +25,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  leak_tracker_flutter_testing: any
   flutter_lints: ^3.0.1
 
 flutter:

@@ -1,3 +1,7 @@
+## 1.0.17
+
+* Fix a memory leak in the CountrySelectorBase widget
+
 ## 1.0.16
 
 * Use theme default for `AppBar` elevation.
