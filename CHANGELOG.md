@@ -1,3 +1,7 @@
+## 1.0.17+1
+
+* Auto publish workflow implemented
+
 ## 1.0.17
 
 * Fix a memory leak in the CountrySelectorBase widget
