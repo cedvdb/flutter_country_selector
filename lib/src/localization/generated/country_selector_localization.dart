@@ -21,6 +21,7 @@ import 'country_selector_localization_it.dart';
 import 'country_selector_localization_ku.dart';
 import 'country_selector_localization_nb.dart';
 import 'country_selector_localization_nl.dart';
+import 'country_selector_localization_pl.dart';
 import 'country_selector_localization_pt.dart';
 import 'country_selector_localization_ru.dart';
 import 'country_selector_localization_sv.dart';
@@ -134,6 +135,7 @@ abstract class CountrySelectorLocalization {
     Locale('ku'),
     Locale('nb'),
     Locale('nl'),
+    Locale('pl'),
     Locale('pt'),
     Locale('ru'),
     Locale('sv'),
@@ -1692,6 +1694,7 @@ class _CountrySelectorLocalizationDelegate
         'ku',
         'nb',
         'nl',
+        'pl',
         'pt',
         'ru',
         'sv',
@@ -1742,6 +1745,8 @@ CountrySelectorLocalization lookupCountrySelectorLocalization(Locale locale) {
       return CountrySelectorLocalizationNb();
     case 'nl':
       return CountrySelectorLocalizationNl();
+    case 'pl':
+      return CountrySelectorLocalizationPl();
     case 'pt':
       return CountrySelectorLocalizationPt();
     case 'ru':

@@ -1,3 +1,7 @@
+## [1.0.18]
+
+- Add Polish localization
+
 ## 1.0.17+1
 
 * Auto publish workflow implemented
