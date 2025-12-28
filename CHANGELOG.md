@@ -1,3 +1,7 @@
+## 1.0.19
+
+- Fix semantics issue in search field
+
 ## 1.0.18
 
 - Add Polish localization
