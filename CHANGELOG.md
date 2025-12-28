@@ -1,4 +1,4 @@
-## 1.0.18
+## 1.0.19
 
 - Semantics fix for search field
 
