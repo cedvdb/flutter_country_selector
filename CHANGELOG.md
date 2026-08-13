@@ -1,3 +1,9 @@
+## 2.0.0
+
+- [Breaking]: Require dart >=3.5.0
+- [Breaking]: Require flutter >=3.47.0
+- Migrate to the new material_ui package which has been decoupled from the flutter framework in flutter 3.47.0
+
 ## 1.0.19
 
 - Semantics fix for search field

@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter_country_selector/src/country_selector_base.dart';
 
 import 'localization/localization.dart';
