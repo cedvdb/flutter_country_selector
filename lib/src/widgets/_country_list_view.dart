@@ -1,5 +1,5 @@
 import 'package:circle_flags/circle_flags.dart';
-import 'package:material_ui/material_ui.dart';
+import 'package:flutter/material.dart';
 
 import '../search/searchable_country.dart';
 import '_no_result_view.dart';

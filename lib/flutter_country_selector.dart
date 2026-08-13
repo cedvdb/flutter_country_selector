@@ -2,7 +2,7 @@ library flutter_country_selector;
 
 import 'package:circle_flags/circle_flags.dart';
 import 'package:flutter/foundation.dart';
-import 'package:material_ui/material_ui.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_country_selector/src/country_selector_page.dart';
 import 'package:phone_numbers_parser/phone_numbers_parser.dart';
 

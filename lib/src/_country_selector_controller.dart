@@ -1,4 +1,4 @@
-import 'package:material_ui/material_ui.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_country_selector/src/localization/localization.dart';
 import 'package:phone_numbers_parser/phone_numbers_parser.dart';
 
