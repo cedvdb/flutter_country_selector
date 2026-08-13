@@ -38,7 +38,6 @@ dependencies:
   flutter_country_selector:
     path: ../
 
-  material_ui: any
 dev_dependencies:
   flutter_test:
     sdk: flutter

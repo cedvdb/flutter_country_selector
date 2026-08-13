@@ -1,5 +1,6 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_country_selector/flutter_country_selector.dart';
-import 'package:material_ui/material_ui.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() {
   runApp(const MyApp());
