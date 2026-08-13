@@ -99,13 +99,13 @@ abstract class CountrySelectorBaseState<W extends CountrySelectorBase>
   }
 
   /// when the user types in the search box
-  onSearch(String searchedText) {
+  void onSearch(String searchedText) {
     controller.search(searchedText);
-    searchedText = searchedText;
+    searchText = searchedText;
   }
 
   /// when the user press enter in the checkbox
-  onSubmitted() {
+  void onSubmitted() {
     final first = controller.findFirst();
     if (first != null) {
       widget.onCountrySelected(first.isoCode);

@@ -1,9 +1,7 @@
-library flutter_country_selector;
-
 import 'package:circle_flags/circle_flags.dart';
 import 'package:flutter/foundation.dart';
-import 'package:material_ui/material_ui.dart';
 import 'package:flutter_country_selector/src/country_selector_page.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:phone_numbers_parser/phone_numbers_parser.dart';
 
 import 'src/country_selector_sheet.dart';
@@ -26,7 +24,7 @@ abstract class CountrySelector {
   /// Use [CountrySelector.page] if you need to show the selector inside
   /// a widget that is full screen. If you need to show the selector inside
   /// a modal of some sort, use [CountrySelector.sheet] instead.
-  static page({
+  static CountrySelectorPage page({
     required void Function(IsoCode) onCountrySelected,
     List<IsoCode>? countries = IsoCode.values,
     List<IsoCode>? favoriteCountries,
@@ -63,7 +61,7 @@ abstract class CountrySelector {
   /// Use [CountrySelector.sheet] if you need to show the selector inside
   /// a widget that is not full screen. If you need to show the selector
   /// as a full page, use [CountrySelector.page]
-  static sheet({
+  static CountrySelectorSheet sheet({
     required void Function(IsoCode) onCountrySelected,
     List<IsoCode> countries = IsoCode.values,
     List<IsoCode> favoriteCountries = const [],

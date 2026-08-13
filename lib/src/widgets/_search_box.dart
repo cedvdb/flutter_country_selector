@@ -32,7 +32,7 @@ class _SearchBoxState extends State<SearchBox> {
     super.initState();
   }
 
-  void handleChange(text) {
+  void handleChange(String text) {
     widget.onChanged(text);
 
     final isAutofill = text.length > 3 && _previousValue == '';
