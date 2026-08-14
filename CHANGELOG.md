@@ -1,3 +1,7 @@
+## 2.0.1
+
+- Bump version
+
 ## 2.0.0
 
 - [Breaking]: Require dart >=3.5.0
