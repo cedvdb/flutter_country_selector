@@ -1,5 +1,5 @@
 import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:phone_numbers_parser/phone_numbers_parser.dart';
 
 import '_country_selector_controller.dart';
@@ -99,13 +99,13 @@ abstract class CountrySelectorBaseState<W extends CountrySelectorBase>
   }
 
   /// when the user types in the search box
-  onSearch(String searchedText) {
+  void onSearch(String searchedText) {
     controller.search(searchedText);
-    searchedText = searchedText;
+    searchText = searchedText;
   }
 
   /// when the user press enter in the checkbox
-  onSubmitted() {
+  void onSubmitted() {
     final first = controller.findFirst();
     if (first != null) {
       widget.onCountrySelected(first.isoCode);

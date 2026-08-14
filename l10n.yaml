@@ -3,6 +3,5 @@ template-arb-file: en.arb
 output-localization-file: country_selector_localization.dart
 output-class: CountrySelectorLocalization
 output-dir: lib/src/localization/generated
-synthetic-package: false
 format: true
 untranslated-messages-file: untranslated-messages.txt

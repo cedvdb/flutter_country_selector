@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 import '../localization/localization.dart';
 
@@ -32,7 +32,7 @@ class _SearchBoxState extends State<SearchBox> {
     super.initState();
   }
 
-  void handleChange(text) {
+  void handleChange(String text) {
     widget.onChanged(text);
 
     final isAutofill = text.length > 3 && _previousValue == '';
