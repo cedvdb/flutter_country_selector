@@ -1,3 +1,7 @@
+## 2.0.2
+
+- Fix Spanish country name translations (China, Turkey, Togo, Isle of Man, Jordan, Guyana, Libya, Iran, French Polynesia and others were mistranslated or misspelled)
+
 ## 2.0.1
 
 - Bump version
