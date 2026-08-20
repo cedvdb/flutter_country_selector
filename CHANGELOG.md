@@ -1,3 +1,8 @@
+## 2.0.3
+
+- Use deferred imports for localizations
+
+
 ## 2.0.2
 
 - Fix Spanish country name translations (China, Turkey, Togo, Isle of Man, Jordan, Guyana, Libya, Iran, French Polynesia and others were mistranslated or misspelled)

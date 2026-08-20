@@ -5,3 +5,4 @@ output-class: CountrySelectorLocalization
 output-dir: lib/src/localization/generated
 format: true
 untranslated-messages-file: untranslated-messages.txt
+use-deferred-loading: true
