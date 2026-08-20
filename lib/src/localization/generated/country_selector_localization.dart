@@ -1,35 +1,61 @@
 import 'dart:async';
 
-import 'package:flutter/foundation.dart';
+import 'package:flutter/widgets.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
-import 'package:material_ui/material_ui.dart';
 
-import 'country_selector_localization_ar.dart';
-import 'country_selector_localization_ca.dart';
-import 'country_selector_localization_ckb.dart';
-import 'country_selector_localization_de.dart';
-import 'country_selector_localization_el.dart';
-import 'country_selector_localization_en.dart';
-import 'country_selector_localization_es.dart';
-import 'country_selector_localization_fa.dart';
-import 'country_selector_localization_fr.dart';
-import 'country_selector_localization_he.dart';
-import 'country_selector_localization_hi.dart';
-import 'country_selector_localization_hu.dart';
-import 'country_selector_localization_it.dart';
-import 'country_selector_localization_ku.dart';
-import 'country_selector_localization_nb.dart';
-import 'country_selector_localization_nl.dart';
-import 'country_selector_localization_pl.dart';
-import 'country_selector_localization_pt.dart';
-import 'country_selector_localization_ru.dart';
-import 'country_selector_localization_sv.dart';
-import 'country_selector_localization_tr.dart';
-import 'country_selector_localization_uk.dart';
-import 'country_selector_localization_ur.dart';
-import 'country_selector_localization_uz.dart';
-import 'country_selector_localization_vi.dart';
-import 'country_selector_localization_zh.dart';
+import 'country_selector_localization_ar.dart'
+    deferred as country_selector_localization_ar;
+import 'country_selector_localization_ca.dart'
+    deferred as country_selector_localization_ca;
+import 'country_selector_localization_ckb.dart'
+    deferred as country_selector_localization_ckb;
+import 'country_selector_localization_de.dart'
+    deferred as country_selector_localization_de;
+import 'country_selector_localization_el.dart'
+    deferred as country_selector_localization_el;
+import 'country_selector_localization_en.dart'
+    deferred as country_selector_localization_en;
+import 'country_selector_localization_es.dart'
+    deferred as country_selector_localization_es;
+import 'country_selector_localization_fa.dart'
+    deferred as country_selector_localization_fa;
+import 'country_selector_localization_fr.dart'
+    deferred as country_selector_localization_fr;
+import 'country_selector_localization_he.dart'
+    deferred as country_selector_localization_he;
+import 'country_selector_localization_hi.dart'
+    deferred as country_selector_localization_hi;
+import 'country_selector_localization_hu.dart'
+    deferred as country_selector_localization_hu;
+import 'country_selector_localization_it.dart'
+    deferred as country_selector_localization_it;
+import 'country_selector_localization_ku.dart'
+    deferred as country_selector_localization_ku;
+import 'country_selector_localization_nb.dart'
+    deferred as country_selector_localization_nb;
+import 'country_selector_localization_nl.dart'
+    deferred as country_selector_localization_nl;
+import 'country_selector_localization_pl.dart'
+    deferred as country_selector_localization_pl;
+import 'country_selector_localization_pt.dart'
+    deferred as country_selector_localization_pt;
+import 'country_selector_localization_ru.dart'
+    deferred as country_selector_localization_ru;
+import 'country_selector_localization_sv.dart'
+    deferred as country_selector_localization_sv;
+import 'country_selector_localization_tr.dart'
+    deferred as country_selector_localization_tr;
+import 'country_selector_localization_uk.dart'
+    deferred as country_selector_localization_uk;
+import 'country_selector_localization_ur.dart'
+    deferred as country_selector_localization_ur;
+import 'country_selector_localization_uz.dart'
+    deferred as country_selector_localization_uz;
+import 'country_selector_localization_vi.dart'
+    deferred as country_selector_localization_vi;
+import 'country_selector_localization_zh.dart'
+    deferred as country_selector_localization_zh;
 
 // ignore_for_file: type=lint
 
@@ -109,7 +135,12 @@ abstract class CountrySelectorLocalization {
   /// MaterialApp. This list does not have to be used at all if a custom list
   /// of delegates is preferred or required.
   static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
-      GlobalMaterialLocalizations.delegates;
+      <LocalizationsDelegate<dynamic>>[
+    delegate,
+    GlobalMaterialLocalizations.delegate,
+    GlobalCupertinoLocalizations.delegate,
+    GlobalWidgetsLocalizations.delegate,
+  ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
@@ -1666,8 +1697,7 @@ class _CountrySelectorLocalizationDelegate
 
   @override
   Future<CountrySelectorLocalization> load(Locale locale) {
-    return SynchronousFuture<CountrySelectorLocalization>(
-        lookupCountrySelectorLocalization(locale));
+    return lookupCountrySelectorLocalization(locale);
   }
 
   @override
@@ -1704,61 +1734,88 @@ class _CountrySelectorLocalizationDelegate
   bool shouldReload(_CountrySelectorLocalizationDelegate old) => false;
 }
 
-CountrySelectorLocalization lookupCountrySelectorLocalization(Locale locale) {
+Future<CountrySelectorLocalization> lookupCountrySelectorLocalization(
+    Locale locale) {
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
     case 'ar':
-      return CountrySelectorLocalizationAr();
+      return country_selector_localization_ar.loadLibrary().then((dynamic _) =>
+          country_selector_localization_ar.CountrySelectorLocalizationAr());
     case 'ca':
-      return CountrySelectorLocalizationCa();
+      return country_selector_localization_ca.loadLibrary().then((dynamic _) =>
+          country_selector_localization_ca.CountrySelectorLocalizationCa());
     case 'ckb':
-      return CountrySelectorLocalizationCkb();
+      return country_selector_localization_ckb.loadLibrary().then((dynamic _) =>
+          country_selector_localization_ckb.CountrySelectorLocalizationCkb());
     case 'de':
-      return CountrySelectorLocalizationDe();
+      return country_selector_localization_de.loadLibrary().then((dynamic _) =>
+          country_selector_localization_de.CountrySelectorLocalizationDe());
     case 'el':
-      return CountrySelectorLocalizationEl();
+      return country_selector_localization_el.loadLibrary().then((dynamic _) =>
+          country_selector_localization_el.CountrySelectorLocalizationEl());
     case 'en':
-      return CountrySelectorLocalizationEn();
+      return country_selector_localization_en.loadLibrary().then((dynamic _) =>
+          country_selector_localization_en.CountrySelectorLocalizationEn());
     case 'es':
-      return CountrySelectorLocalizationEs();
+      return country_selector_localization_es.loadLibrary().then((dynamic _) =>
+          country_selector_localization_es.CountrySelectorLocalizationEs());
     case 'fa':
-      return CountrySelectorLocalizationFa();
+      return country_selector_localization_fa.loadLibrary().then((dynamic _) =>
+          country_selector_localization_fa.CountrySelectorLocalizationFa());
     case 'fr':
-      return CountrySelectorLocalizationFr();
+      return country_selector_localization_fr.loadLibrary().then((dynamic _) =>
+          country_selector_localization_fr.CountrySelectorLocalizationFr());
     case 'he':
-      return CountrySelectorLocalizationHe();
+      return country_selector_localization_he.loadLibrary().then((dynamic _) =>
+          country_selector_localization_he.CountrySelectorLocalizationHe());
     case 'hi':
-      return CountrySelectorLocalizationHi();
+      return country_selector_localization_hi.loadLibrary().then((dynamic _) =>
+          country_selector_localization_hi.CountrySelectorLocalizationHi());
     case 'hu':
-      return CountrySelectorLocalizationHu();
+      return country_selector_localization_hu.loadLibrary().then((dynamic _) =>
+          country_selector_localization_hu.CountrySelectorLocalizationHu());
     case 'it':
-      return CountrySelectorLocalizationIt();
+      return country_selector_localization_it.loadLibrary().then((dynamic _) =>
+          country_selector_localization_it.CountrySelectorLocalizationIt());
     case 'ku':
-      return CountrySelectorLocalizationKu();
+      return country_selector_localization_ku.loadLibrary().then((dynamic _) =>
+          country_selector_localization_ku.CountrySelectorLocalizationKu());
     case 'nb':
-      return CountrySelectorLocalizationNb();
+      return country_selector_localization_nb.loadLibrary().then((dynamic _) =>
+          country_selector_localization_nb.CountrySelectorLocalizationNb());
     case 'nl':
-      return CountrySelectorLocalizationNl();
+      return country_selector_localization_nl.loadLibrary().then((dynamic _) =>
+          country_selector_localization_nl.CountrySelectorLocalizationNl());
     case 'pl':
-      return CountrySelectorLocalizationPl();
+      return country_selector_localization_pl.loadLibrary().then((dynamic _) =>
+          country_selector_localization_pl.CountrySelectorLocalizationPl());
     case 'pt':
-      return CountrySelectorLocalizationPt();
+      return country_selector_localization_pt.loadLibrary().then((dynamic _) =>
+          country_selector_localization_pt.CountrySelectorLocalizationPt());
     case 'ru':
-      return CountrySelectorLocalizationRu();
+      return country_selector_localization_ru.loadLibrary().then((dynamic _) =>
+          country_selector_localization_ru.CountrySelectorLocalizationRu());
     case 'sv':
-      return CountrySelectorLocalizationSv();
+      return country_selector_localization_sv.loadLibrary().then((dynamic _) =>
+          country_selector_localization_sv.CountrySelectorLocalizationSv());
     case 'tr':
-      return CountrySelectorLocalizationTr();
+      return country_selector_localization_tr.loadLibrary().then((dynamic _) =>
+          country_selector_localization_tr.CountrySelectorLocalizationTr());
     case 'uk':
-      return CountrySelectorLocalizationUk();
+      return country_selector_localization_uk.loadLibrary().then((dynamic _) =>
+          country_selector_localization_uk.CountrySelectorLocalizationUk());
     case 'ur':
-      return CountrySelectorLocalizationUr();
+      return country_selector_localization_ur.loadLibrary().then((dynamic _) =>
+          country_selector_localization_ur.CountrySelectorLocalizationUr());
     case 'uz':
-      return CountrySelectorLocalizationUz();
+      return country_selector_localization_uz.loadLibrary().then((dynamic _) =>
+          country_selector_localization_uz.CountrySelectorLocalizationUz());
     case 'vi':
-      return CountrySelectorLocalizationVi();
+      return country_selector_localization_vi.loadLibrary().then((dynamic _) =>
+          country_selector_localization_vi.CountrySelectorLocalizationVi());
     case 'zh':
-      return CountrySelectorLocalizationZh();
+      return country_selector_localization_zh.loadLibrary().then((dynamic _) =>
+          country_selector_localization_zh.CountrySelectorLocalizationZh());
   }
 
   throw FlutterError(
