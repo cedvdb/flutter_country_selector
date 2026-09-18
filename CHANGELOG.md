@@ -1,3 +1,7 @@
+## 2.0.4
+
+- Added missing Japanese and Thai translations
+
 ## 2.0.3
 
 - Use deferred imports for localizations
