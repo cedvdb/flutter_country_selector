@@ -52,6 +52,7 @@ Use `CountrySelectorLocalization.of(context)?.countryName(isoCode)` when you nee
 - nl
 - pl
 - pt
+- ro
 - ru
 - sv
 - tr
