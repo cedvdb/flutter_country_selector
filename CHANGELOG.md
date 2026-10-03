@@ -1,3 +1,7 @@
+## 2.0.4
+
+- Add Romanian localization
+
 ## 2.0.3
 
 - Use deferred imports for localizations

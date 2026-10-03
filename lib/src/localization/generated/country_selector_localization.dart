@@ -40,6 +40,8 @@ import 'country_selector_localization_pl.dart'
     deferred as country_selector_localization_pl;
 import 'country_selector_localization_pt.dart'
     deferred as country_selector_localization_pt;
+import 'country_selector_localization_ro.dart'
+    deferred as country_selector_localization_ro;
 import 'country_selector_localization_ru.dart'
     deferred as country_selector_localization_ru;
 import 'country_selector_localization_sv.dart'
@@ -162,6 +164,7 @@ abstract class CountrySelectorLocalization {
     Locale('nl'),
     Locale('pl'),
     Locale('pt'),
+    Locale('ro'),
     Locale('ru'),
     Locale('sv'),
     Locale('tr'),
@@ -1720,6 +1723,7 @@ class _CountrySelectorLocalizationDelegate
         'nl',
         'pl',
         'pt',
+        'ro',
         'ru',
         'sv',
         'tr',
@@ -1792,6 +1796,9 @@ Future<CountrySelectorLocalization> lookupCountrySelectorLocalization(
     case 'pt':
       return country_selector_localization_pt.loadLibrary().then((dynamic _) =>
           country_selector_localization_pt.CountrySelectorLocalizationPt());
+    case 'ro':
+      return country_selector_localization_ro.loadLibrary().then((dynamic _) =>
+          country_selector_localization_ro.CountrySelectorLocalizationRo());
     case 'ru':
       return country_selector_localization_ru.loadLibrary().then((dynamic _) =>
           country_selector_localization_ru.CountrySelectorLocalizationRu());
