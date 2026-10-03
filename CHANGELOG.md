@@ -1,3 +1,7 @@
+## 2.0.5
+
+- Declare `flutter_localizations` as a dependency: the generated localization file imports it, and pub.dev rejected the package without it, so 2.0.3 and 2.0.4 were never published. 2.0.5 is the first release that includes Romanian.
+
 ## 2.0.4
 
 - Add Romanian localization
