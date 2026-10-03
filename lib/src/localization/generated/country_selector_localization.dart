@@ -30,6 +30,8 @@ import 'country_selector_localization_hu.dart'
     deferred as country_selector_localization_hu;
 import 'country_selector_localization_it.dart'
     deferred as country_selector_localization_it;
+import 'country_selector_localization_ja.dart'
+    deferred as country_selector_localization_ja;
 import 'country_selector_localization_ku.dart'
     deferred as country_selector_localization_ku;
 import 'country_selector_localization_nb.dart'
@@ -46,6 +48,8 @@ import 'country_selector_localization_ru.dart'
     deferred as country_selector_localization_ru;
 import 'country_selector_localization_sv.dart'
     deferred as country_selector_localization_sv;
+import 'country_selector_localization_th.dart'
+    deferred as country_selector_localization_th;
 import 'country_selector_localization_tr.dart'
     deferred as country_selector_localization_tr;
 import 'country_selector_localization_uk.dart'
@@ -159,6 +163,7 @@ abstract class CountrySelectorLocalization {
     Locale('hi'),
     Locale('hu'),
     Locale('it'),
+    Locale('ja'),
     Locale('ku'),
     Locale('nb'),
     Locale('nl'),
@@ -167,6 +172,7 @@ abstract class CountrySelectorLocalization {
     Locale('ro'),
     Locale('ru'),
     Locale('sv'),
+    Locale('th'),
     Locale('tr'),
     Locale('uk'),
     Locale('ur'),
@@ -1718,6 +1724,7 @@ class _CountrySelectorLocalizationDelegate
         'hi',
         'hu',
         'it',
+        'ja',
         'ku',
         'nb',
         'nl',
@@ -1726,6 +1733,7 @@ class _CountrySelectorLocalizationDelegate
         'ro',
         'ru',
         'sv',
+        'th',
         'tr',
         'uk',
         'ur',
@@ -1781,6 +1789,9 @@ Future<CountrySelectorLocalization> lookupCountrySelectorLocalization(
     case 'it':
       return country_selector_localization_it.loadLibrary().then((dynamic _) =>
           country_selector_localization_it.CountrySelectorLocalizationIt());
+    case 'ja':
+      return country_selector_localization_ja.loadLibrary().then((dynamic _) =>
+          country_selector_localization_ja.CountrySelectorLocalizationJa());
     case 'ku':
       return country_selector_localization_ku.loadLibrary().then((dynamic _) =>
           country_selector_localization_ku.CountrySelectorLocalizationKu());
@@ -1805,6 +1816,9 @@ Future<CountrySelectorLocalization> lookupCountrySelectorLocalization(
     case 'sv':
       return country_selector_localization_sv.loadLibrary().then((dynamic _) =>
           country_selector_localization_sv.CountrySelectorLocalizationSv());
+    case 'th':
+      return country_selector_localization_th.loadLibrary().then((dynamic _) =>
+          country_selector_localization_th.CountrySelectorLocalizationTh());
     case 'tr':
       return country_selector_localization_tr.loadLibrary().then((dynamic _) =>
           country_selector_localization_tr.CountrySelectorLocalizationTr());

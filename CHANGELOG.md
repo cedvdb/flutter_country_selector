@@ -1,6 +1,7 @@
 ## 2.0.4
 
 - Add Romanian localization
+- Added missing Japanese and Thai translations
 
 ## 2.0.3
 
