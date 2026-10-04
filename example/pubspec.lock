@@ -37,10 +37,10 @@ packages:
     dependency: transitive
     description:
       name: circle_flags
-      sha256: "22268452bb0c0146251c01969e9b85dd36c76e13bd13f543bd0af8b7b334c181"
+      sha256: aa4adae6565cecfc9fbfcb1336bcbabce718c0b0799d4b1bae7ad7e94ad05b75
       url: "https://pub.dev"
     source: hosted
-    version: "5.0.1"
+    version: "7.0.0"
   clock:
     dependency: transitive
     description:
@@ -203,10 +203,10 @@ packages:
     dependency: "direct main"
     description:
       name: material_ui
-      sha256: d9b4f6c69b80bc83d0a14357c86e4c14c8076e807ae73cf2960c8560f623995f
+      sha256: "32d98f11cf5942a095a8c3e01b03e4de3b17941437713dcf36b1088fb62e23d2"
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.0"
+    version: "1.5.0"
   meta:
     dependency: transitive
     description:
@@ -240,20 +240,21 @@ packages:
     source: hosted
     version: "7.0.2"
   phone_form_field:
-    dependency: "direct overridden"
+    dependency: transitive
     description:
-      path: "../../phone_form_field"
-      relative: true
-    source: path
-    version: "11.0.2"
+      name: phone_form_field
+      sha256: d3516995899bc9c12711a862e327bcaac6805939f30a615323feef01f72f8afd
+      url: "https://pub.dev"
+    source: hosted
+    version: "12.0.1"
   phone_numbers_parser:
     dependency: transitive
     description:
       name: phone_numbers_parser
-      sha256: f0d669e9bb3def72b479ee034a42ddc2eecb5d39af9e598459d6f1c489bb19c7
+      sha256: "911410b1b6e81a03b7052f2f5ddb838d85d50410295a42551ded7720f4ef4923"
       url: "https://pub.dev"
     source: hosted
-    version: "9.0.25"
+    version: "9.0.28"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -372,5 +373,5 @@ packages:
     source: hosted
     version: "7.0.1"
 sdks:
-  dart: ">=3.12.0 <4.0.0"
+  dart: ">=3.13.0 <4.0.0"
   flutter: ">=3.47.0"

@@ -22,11 +22,6 @@ jobs:
           channel: "stable"
       - run: flutter --version
 
-      # This package re-exports phone_form_field, so it needs the sibling
-      # checkout that dependency_overrides points at.
-      - name: Checkout phone_form_field (sibling checkout)
-        run: git clone --depth 1 https://github.com/cedvdb/phone_form_field.git ../phone_form_field
-
       - name: Install dependencies
         run: flutter pub get
 

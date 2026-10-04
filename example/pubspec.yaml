@@ -39,12 +39,6 @@ dependencies:
     path: ../
   material_ui: any
 
-# Local development only: the example resolves phone_form_field through
-# flutter_country_selector, so it needs its own override until
-# phone_form_field 12.0.0 is published.
-dependency_overrides:
-  phone_form_field:
-    path: ../../phone_form_field
 dev_dependencies:
   flutter_test:
     sdk: flutter
