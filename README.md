@@ -111,12 +111,23 @@ Some users have expressed their need to change some flags due to political reaso
 
 ## Development
 
-This package re-exports [phone_form_field](https://github.com/cedvdb/phone_form_field), so it needs its checkout next to this one (see `dependency_overrides` in `pubspec.yaml`):
-
 ```sh
-git clone https://github.com/cedvdb/phone_form_field.git ../phone_form_field
+git clone https://github.com/cedvdb/flutter_country_selector.git
+cd flutter_country_selector
 flutter pub get
 flutter test
+
+# the example has its own test
+cd example && flutter pub get && flutter test
 ```
 
-The `dependency_overrides` block can be removed once `phone_form_field` 12.x is published.
+This package is a thin re-export, so its tests only smoke test the re-exported
+API against the published `phone_form_field`. To try out an unreleased
+`phone_form_field` change together with it, point `pubspec.yaml` at a sibling
+checkout temporarily:
+
+```yaml
+dependency_overrides:
+  phone_form_field:
+    path: ../phone_form_field
+```
