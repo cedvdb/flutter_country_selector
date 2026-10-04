@@ -15,10 +15,17 @@
   aliases of `PhoneFieldLocalizationImpl` and `PhoneFieldLocalizationImplEn`,
   so `.delegate`, `.of(context)`, `.supportedLocales` and the country names
   extension keep working.
-- Use `PhoneFieldLocalization.delegates` to wire
-  `MaterialApp.localizationsDelegates`. `CountrySelectorLocalization
-  .localizationsDelegates` still exists but now holds the
-  `flutter_localizations` delegates rather than the `material_ui` ones.
+- **[Fixed]** Non english locales crashed with `No MaterialLocalizations found.`:
+  wire `PhoneFieldLocalization.delegates` in `MaterialApp.localizationsDelegates`.
+  It holds `material_ui`'s `GlobalMaterialLocalizations.delegates`, as
+  recommended by the
+  [material_ui migration guide](https://pub.dev/packages/material_ui#step-2-migrate-localizations-if-needed).
+  The generated list is written by `flutter gen-l10n`, whose template emits the
+  `flutter_localizations` delegates: those implement the framework
+  `MaterialLocalizations`, not the `material_ui` one the widgets read.
+  `CountrySelectorLocalization.localizationsDelegates` is not a second set: it is
+  the same member, as `CountrySelectorLocalization` is a typedef of
+  `PhoneFieldLocalizationImpl`.
 
 ## 2.0.4
 

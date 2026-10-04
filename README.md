@@ -82,6 +82,7 @@ Use `CountrySelectorLocalization.of(context)?.countryName(isoCode)` when you nee
 Example setup:
 
 ```dart
+import 'package:material_ui/material_ui.dart';
 import 'package:phone_form_field/country_selector.dart';
 import 'package:phone_form_field/phone_form_field.dart';
 
@@ -94,6 +95,15 @@ const MaterialApp(
   // ...
 )
 ```
+
+`MaterialApp` is `material_ui`'s rather than the one of `package:flutter/material.dart`,
+as the widgets are built on [`material_ui`](https://pub.dev/packages/material_ui)
+(decoupled from the framework in Flutter 3.47.0). `PhoneFieldLocalization.delegates`
+holds `material_ui`'s `GlobalMaterialLocalizations.delegates`, following the
+[material_ui migration guide](https://pub.dev/packages/material_ui#step-2-migrate-localizations-if-needed);
+the generated `CountrySelectorLocalization.localizationsDelegates` holds the
+`flutter_localizations` ones, which are a different `MaterialLocalizations` type
+and throw `No MaterialLocalizations found.` for non english locales.
 
 # Overwriting or adding custom flags
 
