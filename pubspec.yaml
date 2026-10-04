@@ -1,6 +1,6 @@
 name: flutter_country_selector
-description: how a country picker to select a country
-version: 2.0.4
+description: A country picker to select a country. Merged into phone_form_field, this package now re-exports it.
+version: 3.0.0
 repository: https://github.com/cedvdb/flutter_country_selector
 homepage: https://github.com/cedvdb/flutter_country_selector
 
@@ -12,20 +12,11 @@ dependencies:
   flutter:
     sdk: flutter
 
-  intl: ">=0.18.0 <=1.0.0"
-  diacritic: ^0.1.5
-  circle_flags: ^5.0.0
-  material_ui: ^1.0.0
-  # for iso codes, phone_numbers_parser needs to stay currently
-  # as the flutter_country_selector library needs to be
-  # compatible with phone_form_field
-  phone_numbers_parser: ^9.0.2
+  # The country selector sources, arbs and generated localizations live there.
+  phone_form_field: ^12.0.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  leak_tracker_flutter_testing: any
+  material_ui: ^1.0.0
   flutter_lints: ^6.0.0
-
-flutter:
-  generate: true

@@ -1,3 +1,20 @@
+## 3.0.0
+
+- **[Breaking]** The country selector has been merged into
+  [phone_form_field](https://pub.dev/packages/phone_form_field). The sources,
+  the arbs, the generated localizations and the tests now live there so that the
+  phone field and the country selector share a single set of sources, a single
+  l10n setup and a single dependency tree (they always shipped together). This
+  package is now a thin re-export of
+  `package:phone_form_field/country_selector.dart`:
+  `import 'package:flutter_country_selector/flutter_country_selector.dart';`
+  keeps working, `import 'package:phone_form_field/country_selector.dart';` is
+  preferred.
+- `CountrySelectorLocalization` and `CountrySelectorLocalizationEn` are now
+  aliases of `PhoneFieldLocalizationImpl` and `PhoneFieldLocalizationImplEn`,
+  so `.delegate`, `.of(context)`, `.supportedLocales` and the country names
+  extension keep working.
+
 ## 2.0.4
 
 - Add Romanian localization
